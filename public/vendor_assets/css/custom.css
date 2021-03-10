@@ -1,0 +1,527 @@
+/* your styles go here */
+
+
+
+.table-wrapper {
+
+		width: 100%;
+
+		margin:auto;
+
+        background: #fff;
+
+        padding: 20px;	
+
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+    }
+
+    .table-title {
+
+        padding-bottom: 10px;
+
+        margin: 0 0 10px;
+
+    }
+
+    .table-title h2 {
+
+        margin: 6px 0 0;
+
+        font-size: 22px;
+
+    }
+
+    .table-title .add-new {
+
+    float: right;
+
+		height: 30px;
+
+		font-weight: bold;
+
+		font-size: 12px;
+
+		text-shadow: none;
+
+		min-width: 100px;
+
+		border-radius: 50px;
+
+		line-height: 13px;
+
+    }
+
+	.table-title .add-new i {
+
+		margin-right: 4px;
+
+	}
+
+    table.table {
+
+        table-layout: fixed;
+
+    }
+
+    table.table tr th, table.table tr td     {
+
+        border-color: #e9e9e9;
+
+    }
+
+    table.table th i {
+
+        font-size: 13px;
+
+        margin: 0 5px;
+
+        cursor: pointer;
+
+    }
+
+    table.table th:last-child {
+
+        width: 100px;
+
+    }
+
+    table.table td a {
+
+		cursor: pointer;
+
+        display: inline-block;
+
+        margin: 0 5px;
+
+		min-width: 24px;
+
+    }    
+
+	table.table td a.add {
+
+        color: #27C46B;
+
+    }
+
+    table.table td a.edit {
+
+        color: #FFC107;
+
+    }
+
+    table.table td a.delete {
+
+        color: #E34724;
+
+    }
+
+    table.table td i {
+
+        font-size: 19px;
+
+    }
+
+	table.table td a.add i {
+
+        font-size: 24px;
+
+    	margin-right: -1px;
+
+        position: relative;
+
+        top: 3px;
+
+    }    
+
+    table.table .form-control {
+
+        height: 32px;
+
+        line-height: 32px;
+
+        box-shadow: none;
+
+        border-radius: 2px;
+
+    }
+
+	table.table .form-control.error {
+
+		border-color: #f50000;
+
+	}
+
+	table.table td .add {
+
+		display: none;
+
+	}
+
+
+
+@media (max-width: 767px) {
+
+	table.table {
+
+	    table-layout: auto;
+
+	}
+
+}
+
+
+
+.status-bg {
+
+    color: #fff !important;
+
+    padding: 5px 10px;
+
+    font-size: 12px;
+
+    margin: 5px !important;
+
+}
+
+.pending-status {
+
+	background: #cf4916;
+
+	}
+
+	.accepted-status {
+
+		background-color: #dc9705;
+
+	}
+
+	.inprogress-status {
+
+		background: #57b80f;
+
+	}
+
+
+
+/* Images Form Upload S */
+
+#pic{
+
+     display: none;
+
+       }
+
+       
+
+ .newbtn{
+
+         cursor: pointer;
+
+         padding: 0px 20px;
+
+      }
+
+      #blah{
+
+  max-width:60px;
+
+  height:60px;
+
+}
+
+/* Images Form Upload E */
+
+
+
+table{
+
+    width:100%;
+
+}
+
+
+
+.order-grid-section label {
+
+    display: inline-flex;
+
+    margin-bottom: .5rem;
+
+    margin-top: .5rem;   
+
+        align-items: center;
+
+}
+
+
+
+@media (min-width: 768px) {
+
+	#example_filter{
+
+    float:right;
+
+}
+
+#example_paginate{
+
+    float:right;
+
+}
+
+}
+
+@media (max-width: 767px) {
+
+.order-grid-section .table-bordered.dataTable {
+
+	    display: block;
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+.order-grid-section .dataTables_paginate.paging_simple_numbers {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
+    justify-content: center;
+
+}
+
+.order-grid-section .dataTables_info {
+
+	    text-align: center;
+
+    padding-bottom: 10px;
+
+}
+
+}
+
+
+
+@media (max-width: 575px) {
+
+ .card-body {
+
+    padding: 30px 0px;
+
+}
+
+/*.order-grid-section .table-wrapper {
+
+	padding: 0px;
+
+}*/
+
+.order-grid-section .page-link {
+
+    padding: 2px 6px;
+
+}
+
+}
+
+/* Custom Css S */
+.page-holder .modal-body label{
+    display: flex;
+}
+
+.order-popup-price label{
+          display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+table.table tr td .btn-danger, table.table tr td .btn-success {
+    padding: 3px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px !important;
+    color: #ffffff;
+}
+.dataTables_filter, .dataTables_paginate{
+    float: right;
+}
+.modal-line-hr {
+    border-bottom: 1px solid #ff4e00;
+    margin-top: 0px;
+}
+.filter-icon-right {
+    text-align: right;
+}
+.filter-icon-size {
+    font-size: 30px;
+    padding-right: 15px;
+    color: #ff4e00;
+}
+
+@media (min-width: 768px) {
+.table.table-striped {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-wrapper {
+    box-shadow: none;
+}
+/*table.table {
+    table-layout: auto;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}*/
+}
+
+/* Custom Css E */
+
+
+/* Login Page S*/
+
+.login-right {
+padding: 40px;
+    border: 1px solid #ddd;
+    margin: 0px 70px;
+}
+
+.login-logo {
+  text-align: center;
+    padding-bottom: 30px;
+  }
+.dropdown-item {
+white-space: normal !important;
+}
+
+.form-group.row.price_detail_padd input {
+    margin-bottom: 10px !important;
+}
+#manage_price input {
+    margin-bottom: 10px !important;
+}
+
+.add-price-bottom input {
+  margin-bottom: 20px;
+}
+
+.order-history-tab2 th:nth-child(1) {
+width: 50% !important; 
+}
+.order-history-tab2 th:nth-child(2) {
+width: 20% !important; 
+}
+.order-history-tab2 th:nth-child(3) {
+width: 15% !important; 
+}
+.order-history-tab2 th:nth-child(4) {
+width: 15% !important; 
+}
+
+.order-history-tab3 th:nth-child(1) {
+width: 50% !important; 
+}
+.order-history-tab3 th:nth-child(2) {
+width: 20% !important; 
+}
+.order-history-tab3 th:nth-child(3) {
+width: 15% !important; 
+}
+.order-history-tab3 th:nth-child(4) {
+width: 15% !important; 
+}
+
+
+.sidebar-link.active, .sidebar-link:focus {
+    background: #F17427;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.order-report-bg {
+    background: #F17427;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+}
+.filter-icon-size {
+    font-size: 30px;
+    padding-right: 15px;
+    color: #ffffff !important;
+}
+.order-report-bg h2 {
+    font-weight: 500;
+}
+.page-holder .btn-success {
+    color: #ffffff !important;
+}
+
+.navbar .dropdown-menu {
+    border: 1px solid #ddd !important;
+}
+@media (max-width: 991px) {
+  .login-r-img {
+    text-align: center;
+  }
+  .login-r-img  img {
+    width: 80%;
+  }
+  .login-right {
+padding: 20px;
+    margin: 0px 30px;
+}
+}  
+
+
+table.dataTable thead>tr>td.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc {
+    padding-right: 30px;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative;
+}
+table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\f0de";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:after, table.dataTable thead .sorting_desc_disabled:before {
+    position: absolute;
+    bottom: .5em;
+    display: block;
+    opacity: .3;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc_disabled:after {
+    content: "\f0dd";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    right: 16px;
+    font-size: 1rem;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc_disabled:after, table.dataTable thead .sorting_desc_disabled:before {
+    position: absolute;
+    bottom: .5em;
+    display: block;
+    opacity: .3;
+}

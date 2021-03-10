@@ -1,0 +1,159 @@
+:root{
+	--main-color:#222;
+    --background-color:#51aa1b;
+	--border-color:#e2e2e2;
+	--button-hover-color:#51aa1b;
+    --text-hover-color:#51aa1b;
+    --secondary-color:#ff4e00;
+}
+
+/*---------------------Main Color------------------*/
+/*color*/
+#header .it-menu-horizontal ul li.level-1:hover span,#header .it-menu-horizontal ul li.level-1:hover span:after,.innovatoryPopupnewsletter-i .close:hover,#_desktop_wishtlistTop .innovatorywishtlistTop .wishtlist_top,.subpage .innovatoryProductList .innovatory-product-title a:hover,.no-account a:hover,
+.team-memb-body h2,.active_filters .filter-block .close:hover,.sitemap a:hover,#manufacturer li.brand a:not(.btn):hover,.text-col h5,
+.innovatoryProductGrid .productName a:hover,.innovatoryTestimonial .item span,#left-column .itcolumn .productName a:hover,.contact-rich .block .icon,.breadcrumb ol li:last-child a,#mywishlist #block-history a:hover,.innovatoryProductGrid .productName a:hover,
+.tabs .nav-tabs .nav-link.active, .tabs .nav-tabs .nav-link:hover,.cart-grid-body a.label:focus,.itfootercontactinfo_inner .icon,.page-cart .product-line-grid-body>.product-line-info>a.label:hover,#newsletter_block_popup .block_content .htAlert,
+.product-line-grid-right .product-price .remove-from-cart:hover,#header .innovatory-cart a .cart-products-count, .page-my-account #content .links a:hover i,.sec-heading h4,.block-categories .category-sub-menu li[data-depth="0"] > a:hover,.contact-rich .block a:hover,#itsearch_data .items-list li .product-name:hover,.bolg_des .sdsarticleHeader .sdstitle_block a:hover,
+.owl-carousel .owl-nav > *,.innovatoryFooter-center .link-wrap ul li a:hover,#header .it-menu-horizontal ul li.level-1 ul li a:hover,.forgot-password a:hover,
+body#checkout section.checkout-step .delete-address:hover,.current-lan,body#checkout section.checkout-step .edit-address:hover,.block-categories .category-sub-menu .category-sub-link:hover{
+    color: var(--main-color);
+}
+
+/*End-color*/
+
+/*background-color*/
+.check-fancy input[type=radio]:checked + label:before,.page-not-found #search_widget #searchbox button[type="submit"]:hover,
+.check-fancy input[type=checkbox]:checked + label:before,.quickview .current-price span.discount,.text-col .btn,.innovatoryFooter-center .h3:before,.pagination .page-list li a:hover, .pagination .page-list li a.disabled,
+.pagination .pagination_bottom li a:hover,#index a.btn-primary.white-bg:hover,#index a.btn-primary.white-bg:focus,.service .ser-img:after,.chef-img .overlay,
+#left-column .bor-btn:hover,#mywishlist td.wishlist_delete a:hover{
+	background-color: var(--main-color);
+}
+/*border-color*/
+.it-menu-vertical .menu-content,.innovatoryProductGrid .innovatoryItem .quick-view:hover, .innovatoryProductGrid .innovatoryItem .addToWishlist:hover,.service .ser-img,.chef-img:before,.check-fancy input[type=checkbox] + label:before,.check-fancy input[type=checkbox]:checked + label:before, 
+.bor-btn:hover,.bor-btn:hover,.contact-rich .block .icon,a.btn-primary.btn-style.white-bg:focus:after,.check-fancy input[type=radio] + label:before,.btn-primary.style-btn:before,
+.innovatoryProductList .innovatoryItem a:hover,.innovatoryProductList .innovatoryCart button:hover,#left-column .bor-btn:hover,.product-images > li.thumb-container .thumb.selected, .product-images > li.thumb-container .thumb:hover,#block-reassurance li,.quickview .product-images .thumb-container img.selected, .quickview .product-images .thumb-container img:hover,
+.product-actions .add-to-cart:hover,.pagination .pagination_bottom li a:hover,.innovatoryProductList .innovatoryItem a:hover,.btn-primary.white-bg:hover:after,.btn-primary.white-bg:focus:after,#index a.btn-primary.white-bg:hover:after,.nav-meta .dropdown-menu,
+.innovatoryProductGrid  .innovatoryItem .quick-view:before,.innovatoryProductGrid  .innovatoryItem .addToWishlist:before,.innovatoryProductGrid  .innovatoryItem .cart-btn:before,.btn-primary.btn-style:after,.innovatoryProductList .innovatoryCart button:before,.innovatoryProductList .innovatoryItem a:before{
+	border-color: var(--main-color);
+}
+.sec-heading h3:after,.title_block h3 span:after,{
+   border-top-color: var(--text-hover-color); 
+}
+/*box-sh
+adow*/
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(254,215,0,0.1), 0 0 10px 10px var(--text-hover-color), 0 0 0 10px rgba(254,215,0,0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/*---------------------text-hover-color------------------*/
+#search_block_top .btn.button-search:hover,.it_tab .innovatory-tab li a.active,.customer-support-text p,.itCategoryFeature .item .sub-cat li a:hover,.itCategoryFeature .item .sub-cat li a:hover i,.innovatoryProductGrid.specialProductGrid .innovatory-product-price-and-shipping .price,
+.it-menu-vertical .menu-dropdown a:hover,.link-wrap ul li a i,.innovatoryFooter-center .link-wrap ul li a:hover,#innovatoryContact .item i,.read_more,.it-menu-vertical ul li.level-1:hover>a,.mypresta_scrollup:hover,.blogdetail span:hover,.blogdetail span:hover a,
+.innovatoryDisplaySearch .expand-more:hover,.cart-grid-body a.label:hover,.View_More:hover,.product-line-grid-right .cart-line-product-actions .remove-from-cart:hover,.scroll-box-arrows i:hover, .quickview .product-images .owl-nav > *:hover,.product-cover .layer:hover .zoom-in,#header .innovatory-cart .cart_block .products .cart-info .productName a:hover,
+.owl-carousel:not(.product-images) .owl-nav > *,.blogdetail a:hover,.blog_content .sds_post_title a:hover,.service h2,.itCategoryFeature .item .categoryName a:hover{
+    color:  var(--text-hover-color) ;
+}
+#header,.owl-carousel .owl-nav > *:hover,.itCategoryFeature .item .categoryName:after,.innovatoryProductGrid .innovatory-product-description .innovatoryCart .cart-btn,.itProductList .innovatoryItem .quick-view, .itProductList .innovatoryItem .addToWishlist, .itProductList .innovatoryItem .cart-btn,
+.innovatoryProductGrid .innovatoryItem .quick-view, .innovatoryProductGrid .innovatoryItem .addToWishlist, .innovatoryProductGrid .innovatoryItem .cart-btn,.innovatoryProductList .innovatoryCart button, .innovatoryProductList .innovatoryItem a,.is-countdown .countdown-amount,.specialProductGrid .cart .ajax_add_to_cart_button:hover,
+.home_blog_post .blog_post_content .post_thumbnail .thumbnail:before,.mypresta_scrollup,.form-group .input-group .input-group-btn>.btn:hover,#blockcart-modal .modal-header,.title_block:before,.sec-heading:before{
+    background-color: var(--text-hover-color);
+}
+.owl-carousel:not(.product-images) .owl-nav > *,.form-group .input-group .input-group-btn>.btn:hover,.owl-carousel .owl-nav > *:hover,.mypresta_scrollup:hover,.innovatoryProductGrid.specialProductGrid .item.innovatoryProduct-container:before,.innovatoryProductGrid.specialProductGrid .item.innovatoryProduct-container:after,.innovatoryProductGrid.specialProductGrid .item.innovatoryProduct-container .item_in:before,
+.innovatoryProductGrid.specialProductGrid .item.innovatoryProduct-container .item_in:after{
+	border-color: var(--text-hover-color);
+}
+/*--------------------default-border-color--------------------*/
+/*default-border-color*/
+.bolg_des,#left-column .product-column-style, #left-column .category-top-menu,.card,.form-control,.service,.active_filters .filter-block,#js-active-search-filters,#category #left-column #search_filters .facet ul li:not(:last-child), .block-categories .category-sub-menu > li:not(:last-child),#productCommentsBlock .innovatorytabs,.it-menu-vertical .menu-dropdown,
+.innovatoryProductList .item,#search_filters .facet,#search_filters_brands .facet, #search_filters_suppliers .facet,#left-column .bor-btn,.product-cover,.tabs .tab-content,.product-variants > .product-variants-item select,.innovatoryNextPrev .nextPrevProduct .innovatoryContent,body#checkout section.checkout-step,body#checkout section.checkout-step .address-item.selected,
+.table-bordered, .table-bordered td,.innovatoryProductGrid .productName,.itCategoryFeature .innovatory-media-body,#search_category,.service .icon-image,.service-sec,.service-sec .service-box:not(:first-child),.table-bordered th,.page-my-account #content .links a span.link-item,.page-customer-account #content, .page-addresses #content,.page-addresses .address,.PopupWishListInner,.products-sort-order .dropdown-menu,.pagination .pagination_bottom li a,.cart-item .product-line-grid .product-image,.wlp_bought_list .product_image,.wlp_bought_item_container,.itProductList .title_block h3 span,
+#header .innovatory-cart .cart_block,.wishtlist_top span.icon,.current-lan,.language-selector ul li a,.dropdown-menu,.search-widget form input[type="text"],.innovatoryProductGrid.innovatoryProducts .item,#ui-id-1,#_desktop_currency_selector .language-selector .expand-more,#_desktop_language_selector .language-selector .expand-more,.innovatoryProductGrid .item,
+.itProductList.itcolumn .innovatoryColumn .innovatoryProductsList,.innovatoryFooter-bottom .container{
+    border-color: var(--border-color);
+}
+#header .innovatory-cart .cart_block .products,.it-menu-vertical ul li.level-1 ul li.item-header a, #header .it-menu-vertical ul li.level-1 li.item-header a,#header .it-menu-horizontal ul li.level-1 ul li.item-header a,#header .it-menu-vertical ul li.level-1>a,#blockcart-modal .divide-right,.cart-grid-body .cart-items .cart-item:not(:last-child),#left-column .itcolumn .item-inner:not(:last-child) .innovatory-thumbnail-container > .no-margin,
+#left-column .itcolumn .owl-item .item:not(:last-child),.owlProductFilter-It-featured-prod-column .item:not(:last-child),.owlProductFilter-It-Specials-prod-column .item:not(:last-child),.owlProductFilter-It-bestseller-prod-column .item:not(:last-child),.owlProductFilter-It-new-prod-column .item:not(:last-child),
+#category #left-column #search_filters .facet ul li:not(:last-child),.title_block,.sec-heading,.it_tab{
+	border-bottom-color: var(--border-color)
+}
+#order-items,{
+	border-right-color: var(--border-color)
+}
+
+/*---------------------Button Hover Color------------------*/
+#header .innovatory-cart .cart_block .cart-buttons a:hover, .focus.btn-tertiary,.product-actions .add-to-cart:hover,body .cart-grid-body > a.label:hover,.owl-carousel button.owl-dot.active,.btn-primary.btn-style:hover,.chef-img .soc-ul li a:hover,
+.itcolumn .innovatorySale-label,.innovatoryTestimonial .owl-dots button.active:before,.sale-banner-bg a:hover,.contact-rich .block:hover .icon,.btn-primary.focus, .btn-primary:focus, .btn-primary:hover,#header .mobile-search-bar,
+.innovatoryProductList .innovatoryItem a:hover,.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:hover, .btn-tertiary:focus, .btn-tertiary:hover, .focus.btn-tertiary,#itimageslider .nivo-controlNav .nivo-control.active,#authentication [data-action="show-password"]:hover,.title_block h3 span:before, .sec-heading h3:before,.specialProductGrid.innovatoryProductGrid .innovatorySale-label,.specialProductGrid .cart .ajax_add_to_cart_button,
+.innovatoryFooter-center .h3:before,.block_newsletter form input.btn{
+	background-color: var(--button-hover-color);
+}
+.sale-banner-bg a:hover,.contact-rich .block:hover .icon,.View_More:hover,.service-box:hover .service .icon-image{
+    border-color: var(--button-hover-color);
+}
+
+/*--------------------secondary-color--------------------*/
+#header .language-selector.dropdown .expand-more:hover,.search-widget form button[type="submit"]:hover{
+    color: var(--secondary-color); 
+}
+.innovatoryProductList .innovatoryCart button:hover,.innovatoryProductList .innovatoryItem a:hover,.innovatoryProductGrid  .innovatoryItem .quick-view:hover,.innovatoryProductGrid  .innovatoryItem .addToWishlist:hover,.innovatoryProductGrid  .innovatoryItem .cart-btn:hover,.home_blog_post .blog_post_content .post_thumbnail .blogicons a.icon:hover,
+.itProductList .innovatoryItem .quick-view:hover,.itProductList .innovatoryItem .addToWishlist:hover, .itProductList .innovatoryItem .cart-btn:hover,.full-nav .container_it_vegamenu,#footer .innovatoryFooter-top{
+    background-color: var(--secondary-color);
+}
+.innovatoryProductGrid .innovatoryItem .quick-view:hover, .innovatoryProductGrid .innovatoryItem .addToWishlist:hover, .innovatoryProductGrid .innovatoryItem .cart-btn:hover,.itProductList .innovatoryItem .quick-view:hover,.itProductList .innovatoryItem .addToWishlist:hover, .itProductList .innovatoryItem .cart-btn:hover{
+    border-color:var(--secondary-color); 
+}
+/*-------------------Responsive---------------------*/
+@media screen and (min-width: 1051px){
+    #header .it-menu-horizontal ul li.level-1:hover,#search_block_top .btn.button-search,.innovatoryPopupnewsletter-i .close:hover,#_desktop_cart{
+        background-color: var(--secondary-color);
+	}
+	#_desktop_wishtlistTop .wishtlist_top .icon:hover,.user-info .icon-wrap-tit:hover,.user-info .user-name:hover{
+        color: var(--secondary-color);
+	}
+}
+@media screen and (max-width: 1050px){
+    #search_block_top .btn.button-search {
+        background-color: var(--main-color);
+    }
+    #header .innovatory-cart a .cart-products-count{
+        background-color: var(--secondary-color);
+    }
+}

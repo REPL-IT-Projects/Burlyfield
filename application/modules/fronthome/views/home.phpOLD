@@ -1,0 +1,544 @@
+
+<div class="brown--color box-search-content search_active block-bg close__top">
+			<form id="search_mini_form" class="minisearch" action="#">
+				<div class="field__search">
+					<input type="text" placeholder="Search entire store here...">
+					<div class="action">
+						<a href="#"><i class="zmdi zmdi-search"></i></a>
+					</div>
+				</div>
+			</form>
+			<div class="close__wrap">
+				<span>close</span>
+			</div>
+		</div>
+		<!-- End Search Popup -->
+        <!-- Start Slider area -->
+        <div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
+        	<!-- Start Single Slide -->
+	        <div class="slide animation__style10 bg-image--8 fullscreen align__center--left">
+	            <div class="container">
+	            	<div class="row">
+	            		<div class="col-lg-12">
+	            			<div class="slider__content">
+		            			<div class="contentbox">
+								  <!--   <h3>ISO</h3> -->
+		            				<h2><span>I</span>NTERNATIONAL <span>S</span>OCIETY</h2>
+		            				<h2 class="another">   OF  <span>O</span>RGANBUILDERS </h2>
+									<p>Only by joining the ISO can you experience the fun and interest, as well as tapping into the wealth of knowledge we all exchange so freely.</p>
+				                   	<a class="shopbtn" href="<?php echo base_url();?>becomemember">JOIN US NOW</a>
+		            			</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+            </div>
+            <!-- End Single Slide -->
+        	<!-- Start Single Slide -->
+	        <div class="slide animation__style10 bg-image--9 fullscreen align__center--left">
+	            <div class="container">
+	            	<div class="row">
+	            		<div class="col-lg-12">
+	            			<div class="slider__content">
+		            			<div class="contentbox">
+								  <!--    <h3>ISO</h3> -->
+		            				<h2><span>I</span>NTERNATIONAL <span>S</span>OCIETY</h2>
+		            				<h2 class="another">   OF  <span>O</span>RGANBUILDERS </h2>
+									<p>Only by joining the ISO can you experience the fun and interest, as well as tapping into the wealth of knowledge we all exchange so freely.</p>
+				                   	<a class="shopbtn" href="<?php echo base_url();?>becomemember">JOIN US NOW</a>		            			</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+            </div>
+            <!-- End Single Slide -->
+        </div>
+        <!-- End Slider area -->
+        <?php if($this->session->flashdata('SUCCESS')){ ?>
+        <div class="alert alert-success hide_msg">
+		<p><?php echo $this->session->flashdata('SUCCESS'); ?></p>
+        </div>
+        <?php } ?>
+		<!-- Start BEst Seller Area -->
+		<div class="page-about about_area bg--white section-padding--lg">
+        	<div class="container">
+				<div class="row">
+        			<div class="col-lg-12">
+        				<div class="section__title--3 text-center pb--10">
+        					<h2>INTRODUCTION</h2>
+        					<p class="subtitlepagein">The ISO was first established in 1957. The aim of the ISO is to provide a rich forum for the exchange of ideas and experience between organ builders from all over the world. This is achieved in a number of ways.</p>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-12 col-12">
+        				<div class="content text-left text_style--2">
+    					    <h3>The ISO Journal</h3>
+    					 
+    					            <p>The ISO Journal is published three time a year and includes various articles submitted by members and occasionally others, describing instruments which have been built, re-built or restored, as well as related subjects such as scaling, tuning methods and the history of the organ. The ISO Journal is published in three languages, English, French and German so that all of our members are able to share the information.</p>
+    				
+    					            <h3>The Biannual Congress</h3>
+    					            <p>The biannual congresses of the ISO are the high point of the society's calendar. Each time we meet in a different country and are shewn the instruments of that country, learn of the history of the instruments and organbuilding and visit member's workshops. </p>
+    					        
+    					            <h3>The Workshops</h3>
+    					            <p>These are smaller than congresses, generally numbering up to 30 participants, where a particular theme is dealt with in depth. They can comprise lectures, visits and practical instruction in whatever theme is being dealt with and generally last 3 to 4 days.</p>
+    					       
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 col-12">
+        				<div class="content">
+        					<h3>MailMan</h3>
+        					<p>The ISO provides a closed email-based forum for its members only, where any member can pose questions to all the other members for consideration and assistance. It is most unusual for a question to go unanswered by somebody who has the experience and knowledge sought, and is given freely and most helpfully.</p>
+        					<h3>Apprentice Exchange</h3>
+        					<p>Our young organbuilders are also our future for organbuilding. The ISO encourages and can assist in the exchange of apprentices between organbuilding firms to afford these up and coming organbuilder the possibility of gaining experience outside the confines of the firm they are apprenticed with.</p>
+        					<h3>World Wide Representation of Organbuilders' Interests</h3>
+        					<p>Occasionally, issues arise which may have an impact on organbuilding the world over, or even in a particular region of the world. One of the objects of the ISO is to keep an eye on such developments and to take an active role in addressing any issues which might arise and be of concern to the continuation of our craft.	</p>
+
+        				
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+                <section class="wn__testimonial__area bg--gray ptb--80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="testimonial__container text-center">
+							<div class="tes__img__slide thumb_active">
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f12b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f14b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f7b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f2b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f3b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f4b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/fb15b.jpg" alt="testimonial image"></span>
+								</div>
+								<div class="testimonial__img">
+									<span><img src="<?php echo base_url();?>public/front_assets/images/f13b.jpg" alt="testimonial image"></span>
+								</div>
+							</div>
+							<div class="testimonial__text__slide testext_active">								
+								<div class="clint__info">
+									<p>Didier Grassins interest in organbulding began in the shadow the famous Clicquot organ of Poitiers, France, his native town.</p>
+									<div class="name__post">
+										<span>Didier Grassin</span>
+										<h6>ISO president</h6>
+									</div>
+								</div>							
+								<div class="clint__info">
+									<p></p>
+									<div class="name__post">
+										<span>Bertrand Cattiaux</span>
+										<h6>1st ISO vice president</h6>
+									</div>
+								</div>								
+								<div class="clint__info">
+									<p>Organbuilder since 1973. Apprenticeship at his father's shop, with Vier/Oberweiher (both Germany) and with Phelps, Erie, PA (USA).</p>
+									<div class="name__post">
+										<span>Klaus Rensch</span>
+										<h6>ISO Journal Editor</h6>
+									</div>
+								</div>					
+								<div class="clint__info">
+									<p>Studied classical Humanioraat, History of art and musicology (memoire de license: "La facture d'orgues liegeoise au XVIII siecle: la dynastie des Le Picard et Robustelly" Musical studies at the Conservatoire Royal de Musique de Liege (organ by Prof. Hubert Schoonbroodt). </p>
+									<div class="name__post">
+										<span>Guido Schumacher</span>
+										<h6>ISO treasurer</h6>
+									</div>
+								</div>
+								<div class="clint__info">
+									<p>Director and co-owner of Orgelbau Goll Luzern, Switzerland. He started his organbuilding apprenticeship after high school graduation, education in architecture and music. He is dedicated to the formation of young Swiss organbuilders.</p>
+									<div class="name__post">
+										<span>Simon Hebeisen</span>
+										<h6>board member</h6>
+									</div>
+								</div>
+								<div class="clint__info">
+									<p></p>
+									<div class="name__post">
+										<span>Catarina Gronlund</span>
+										<h6>Board member</h6>
+									</div>
+								</div>
+								<div class="clint__info">
+									<p></p>
+									<div class="name__post">
+										<span>Martin Pasi</span>
+										<h6>2nd ISO vice president and Secretary</h6>
+									</div>
+								</div>
+								<div class="clint__info">
+									<p>Andrew joined Harrison & Harrison as an apprentice in 1994. At the age of 22 he became London Tuner.  </p>
+									<div class="name__post">
+										<span>Andrew Scott</span>
+										<h6>Board member</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+                                            <a href="<?php echo base_url();?>becomemember"><button class="becomelinklistofhome">BECOME MEMBER, JOIN US NOW</button></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="wn__product__area brown--color pt--80  pb--30">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section__title text-center">
+							<h2 class="title__be--2">New <span class="color--theme">Products</span></h2>
+							<p><!-- There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form --></p>
+						</div>
+					</div>
+				</div>
+				<!-- Start Single Tab Content -->
+
+				<div class="furniture--4 border--round arrows_style owl-carousel owl-theme row mt--50 scollproduct">
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/50.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/50.jpg" alt="product image"></a>
+							<!-- 	<div class="hot__box">
+									<span class="hot-label">BEST SALLER</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="#">ISO 59</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+								<!-- 	<li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/41.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/41.jpg" alt="product image"></a>
+								<!-- <div class="hot__box color--2">
+									<span class="hot-label">HOT</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="#">ISO 58</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+									<!-- <li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/43.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/43.jpg" alt="product image"></a>
+								<!-- <div class="hot__box">
+									<span class="hot-label">BEST SALLER</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="#">ISO 56</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+									<!-- <li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/42.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/42.jpg" alt="product image"></a>
+								<!-- <div class="hot__box">
+									<span class="hot-label">HOT</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="#">ISO 55</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+									<!-- <li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/44.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/44.jpg" alt="product image"></a>
+								<!-- <div class="hot__box">
+									<span class="hot-label">HOT</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center">
+								<h4><a href="#">ISO 54</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+									<!-- <li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Single Product -->
+					<!-- Start Single Product -->
+					<div class="product product__style--3">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product__thumb">
+								<a class="first__img" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/45.jpg" alt="product image"></a>
+								<a class="second__img animation1" href="#"><img src="<?php echo base_url();?>public/front_assets/images/books/45.jpg" alt="product image"></a>
+								<!-- <div class="hot__box">
+									<span class="hot-label">BEST SALER</span>
+								</div> -->
+							</div>
+							<div class="product__content content--center content--center">
+								<h4><a href="#">ISO 53</a></h4>
+								<ul class="prize d-flex">
+									<li>13.33&euro;</li>
+									<!-- <li class="old_prize">15.86€</li> -->
+								</ul>
+								<div class="action">
+									<div class="actions_inner">
+										<ul class="add_to_links">
+											<li><a class="wishlist cartbtnimage" href="#"><i class="bi bi-shopping-cart-full"><span>13.33&euro;</span></i></a></li>
+											<li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+											<li><a class="cartbtnimage subscribebtn" href="#"><span>Subscribe 49&euro;</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product__hover--content">
+									<ul class="rating d-flex">
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li class="on"><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+										<li><i class="fa fa-star-o"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Start Single Product -->
+					</div>
+				</div>
+				<!-- End Single Tab Content -->
+			</div>
+		</section>
+		<!-- Start BEst Seller Area -->
+		<!-- Start Testimonial Area -->
+                <section class="wn__newsletter__area bg-image--2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 offset-lg-5 col-md-12 col-12 ptb--150">
+						<div class="section__title text-center">
+                                                        <h2 class="joinournewtext">JOIN OUR NEWSLETTER</h2>
+							<h2>Stay With Us</h2>
+						</div>
+						<div class="newsletter__block text-center">
+							<p><!-- Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers. --></p>
+							<form action="#">
+								<div class="newsletter__box">
+									<input type="email" placeholder="Enter your e-mail">
+									<button>Subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="wn__recent__post style-two ptb--80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section__title text-center">
+							<h2 class="title__be--2">NOS  <span class="color--theme">SERVICES</span></h2>
+							<!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row mt--50">
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="#">ISO Publications</a></h3>
+								<p>ISO Journal (three issues per year) presents organbuilders with authoritative tehnical articles on a wide range of topics, while providing the general oragn public with news from the profession.</p>
+								<p class="readmoreicon">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+								<div class="post__time">
+									<span class="day">Dec 06, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="#">ISO Congresses</a></h3>
+								<p>The ISO international congresses which take place every other year are major events on the calendar during which members spend a week studying a particular organbuilding tradition in a friendly and congenial...</p>
+								<p class="readmoreicon">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+								<div class="post__time">
+									<span class="day">Mar 08, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="#">ISO Workshop</a></h3>
+								<p>The ISO offers an ongoing educational programme in the form of concentrated workshops and visits, Subjects have included French reed, string voicing, mixture stops, and in-depth examinations...</p>
+								<p class="readmoreicon">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+								<div class="post__time">
+									<span class="day">Nov 11, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        
+		
+                <script>
+                    setTimeout(function() {
+                            $('.hide_msg').hide('fast');
+                    }, 5000);
+                </script>

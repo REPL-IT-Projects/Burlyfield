@@ -1,0 +1,992 @@
+.credit_class{
+  color: green;
+}
+
+.debit_class{
+  color: red;
+}
+.btn_view{
+  color: white !important;
+}
+.parent_name {
+  font-weight: bold;
+  color: #CF4916 !important;
+}
+#addFile{
+  color: #fff !important;
+}
+.mandatory{
+  color: red;
+}
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  max-height: 75px;
+  border: 2px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+.remove{border: 1px solid black!important;}
+#cate_ig{
+	height: 50px;
+	width: 50px;
+}
+i.show_pass {
+	position: absolute;
+	top: 8px;
+	right: 0px;
+	font-size: 17px;
+}
+.logo_text {
+  color: black;
+  padding: 25px 15px 14px;
+  font-size: 17px;
+}
+div.icon_show{
+	position: relative;
+}
+span.wel_admin{
+	line-height: 64px;
+    font-weight: bold;
+    color: white;
+}
+.firstpartform, .secondpartform
+{
+	width: 49%;
+	display: inline-block;
+}
+
+.widthdicre input
+{
+	width: 33%;
+}
+.firstparttextbox
+{
+  width: 70%;
+  display: inline-block;
+}
+.secondparttextbox
+{
+  width: 29%;
+  display: inline-block;
+  float: right;
+}
+.zipcodeandcity
+{
+  width: 30%;
+  display: inline-block;
+}
+.cityandzipcode
+{
+  width: 69%;
+  display: inline-block;
+  float: right;
+}
+.onelinelabelinput select
+{
+  width: 20% !important;
+  display: inline-block;
+
+}
+.threetextbox input
+{
+  width: 30% !important;
+  display: inline-block;
+  margin: 10px 0;
+}
+.threetextbox input:first-child
+{
+  float: left;
+}
+.threetextbox input:last-child
+{
+  float: right;
+}
+.threetextbox label span
+{
+  font-size: 10px;
+}
+.formfooter
+{
+  float: left;
+  width: 100%;
+}
+.formfooter .titlebold
+{
+  font-weight: bold;
+  font-size: 16px;
+}
+.formfooter p
+{
+  margin: 15px 0;
+}
+.formfooter p input
+{
+  margin-right: 15px;
+}
+@media(max-width: 767px)
+{
+ .firstpartform, .secondpartform
+  {
+    width: 100%;
+    display: inline-block;
+  }
+}
+.mem_title{
+  color: #2eb82e;
+}
+.mem_inactive{
+  color: #e62e00;
+}
+.active_contact{
+  color: #0080ff;
+}
+#pagination strong {
+    z-index: 2;
+    color: #fff;
+    background-color: #2962FF;
+    border: 1px solid #2962FF;
+    position: relative;
+    display: inline-block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+}
+#pagination  a{
+    position: relative;
+    display: inline-block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #0275d8;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+.pdfviewpage
+{
+  background: #EFEFEF;
+  padding: 30px 0;
+}
+.pdfviewpage .container
+{
+  background: #fff;
+  border:1px solid #DEE2E6;
+  padding: 50px;
+  border-radius: 5px;
+}
+.headertitle
+{
+  width: 100%;
+  border-bottom: 1px solid #DEE2E6;
+  margin-bottom: 30px;
+}
+.title .first
+{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 30px;
+  
+}
+.title .second
+{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.statuspaid
+{
+  text-align: center;
+}
+.statuspaid .first
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: #C30000;
+  text-transform: uppercase;
+}
+.invoicesendto
+{
+  width: 150px;
+}
+.pay-to
+{
+  display: inline-block;
+}
+.pay-btn img
+{
+  width: 80px;
+  display: inline-block;
+}
+.pay-btn .second
+{
+  display: inline-block;
+}
+.invoicesendto .first
+{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.pay-to 
+{
+  width: 150px;
+}
+.pay-to .first
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.invoce-date .first
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.pay-menthod
+{
+  display: inline-block;
+  width: 150px;
+}
+.pay-menthod .first
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.pay-menthod select
+{
+  width: 100px;
+  display: inline-block;
+}
+.invoiceitemcard
+{
+  border:1px solid #DEE2E6 !important;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.invoiceitemcard .card-header
+{
+  background: #F5F5F5;
+  border-bottom: 1px solid #DEE2E6;
+  color: #000;
+}
+.invioceitemstable td, .invioceitemstable th
+{
+  border-bottom: 1px solid #DEE2E6;
+  border-top: none;
+}
+.invioceitemstable th
+{
+  font-weight: bold !important;
+}
+.lastthreetotalline
+{
+  background: #F8F8F8;
+}
+.lastthreetotalline .first
+{
+  font-weight: bold;
+  text-align: right;
+}
+.lasttransactiontable td,
+.lasttransactiontable th
+{
+  border-bottom: 1px solid #DEE2E6;
+  border-top: none;
+}
+.lasttransactiontable th
+{
+  font-weight: bold !important;
+}
+.lasttotal .first
+{
+  font-weight: bold;
+  text-align: right;
+}
+.no-record
+{
+  text-align: center;
+}
+.lasttotal td
+{
+  border-bottom: none !important;
+}
+.print-download-btn
+{
+  border-radius: 5px;
+}
+.print-download-btn button
+{
+  border:1px solid #DEE2E6;
+}
+.back-toclientlink
+{
+  text-align: center;
+  text-transform: capitalize;
+}
+ .piechartbody
+ {
+    padding: 10px;
+ }
+ .admin_logo
+ {
+    padding: 9px;
+    width: 165px;
+ }
+ .topbar .top-navbar .navbar-header .navbar-brand .logo-icon
+ {
+  /*margin: 0 auto;*/
+ }
+ .shop_img
+ {
+  width: 80px;
+ }
+ .modeltableinpayment
+ {
+  background-color: #fff !important;
+ }
+.modeltableinpayment tr
+{
+background-color: #fff !important
+}
+.modeltableinpayment th
+{
+  background: #e5e5e5;
+}
+.mini-sidebar .navbar-header .navbar-brand.text-center .logo-icon .dark-logo.admin_logo
+{
+  width: 50px;
+}
+.navbar-header.expand-logo .navbar-brand.text-center .logo-icon .dark-logo.admin_logo
+{
+  width: 165px;
+}
+
+
+
+.paymenthistorypdf1  td, .paymenthistorypdf1 th
+{
+  border: none !important;
+}
+.paymenthistorypdf1 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.paymenthistorypdf2  td, .paymenthistorypdf2 th
+{
+  border: none !important;
+  padding: 2px;
+}
+.paymenthistorypdf2 tbody tr:nth-of-type(2n+1)
+{
+  background: #EFEFEF;
+}
+.paymenthistorypdf3  td, .paymenthistorypdf3 th
+{
+  border: none !important;
+  padding: 2px;
+}
+.paymenthistorypdf3 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.paymenthistorypdf4  td, .paymenthistorypdf4 th
+{
+  padding: 5px;
+}
+.paymenthistorypdf5  td, .paymenthistorypdf5 th
+{
+  border: none !important;
+  padding: 2px;
+}
+.paymenthistorypdf5 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.paymenthistorypdf7  td, .paymenthistorypdf7 th
+{
+  padding: 5px;
+}
+.paymenthistorypdf7 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+
+
+.paymenthistorypdf8  td, .paymenthistorypdf8 th
+{
+  border: none !important;
+  padding: 2px;
+}
+.paymenthistorypdf8 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.paymenthistorypdf9  td, .paymenthistorypdf9 th
+{
+  padding: 5px;
+}
+.paymenthistorypdf9 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.paymenthistorypdf10  td, .paymenthistorypdf8 th
+{
+  border: none !important;
+  padding: 5px;
+}
+.paymenthistorypdf10 tbody tr:nth-of-type(2n+1)
+{
+  background: transparent;
+}
+.abcd .frame {
+    height: auto !important;
+}
+.frame {
+    height: 200px;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.abcd {
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    position: relative;
+    float: left;
+}
+a.gift_pos {
+    z-index: 1 !important;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    outline: 0;
+    transition: all .3s ease;
+}
+.delet_button {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    top: 0;
+    width: 30px;
+    color: #040836;;
+}
+#edit_mode_image{
+    height: 100px;
+    width: 100px;
+}
+/*.nav-tabs .nav-link, .nav-tabs .active .nav-link {
+  color: #4F5467 !important;
+  background-color: #fff !important;
+}*/
+li.active .nav-link{
+  color: #4F5467 !important;
+  background-color: #fff !important;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.border-1-padding-15 {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+}
+.icongroupinput{
+    padding: 5px 0px 0px 0px;
+}
+
+
+/* Custom Css Add S*/
+
+.order-view-details {
+-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.order-view-details h5, .order-view-details h3 {
+    margin-bottom: 0px !important;
+}
+
+/* Custom Css Add E*/
+
+#csv_toggle{
+  color: #fff !important;
+}
+
+/* Chating page Design S */
+
+.ChatingPage .tg-formtheme-chat {
+    width: 100%;
+    float: left;
+}
+.ChatingPage .tg-dashboardbox {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    border-radius: 5px; margin-bottom: 10px;
+}
+.ChatingPage .tg-dashboardboxtitle {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border-bottom: 1px solid #eaedef;
+}
+/*.ChatingPage .tg-offersmessages {
+    padding: 0;
+}*/
+.ChatingPage .tg-dashboardholder {
+    z-index: 2;
+    width: 100%;
+    float: left;
+     padding: 30px; 
+    position: relative;
+}
+.ChatingPage .tg-offersmessages ul {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border:1px solid #e9ecef;
+}
+
+.ChatingPage .tg-offersmessages ul li:last-child {
+    width: 75%;
+    padding: 0px;
+}
+.ChatingPage  .tg-offersmessages ul li + li {
+    border-left: 1px solid #e9ecef;
+}
+.ChatingPage .tg-offersmessages ul li {
+    width: 25%;
+    float: left;
+    position: relative;
+    line-height: inherit;
+    list-style-type: none;
+    padding: 20px 8px 0px 20px;
+}
+.ChatingPage li {
+    line-height: 28px;
+    list-style: disc inside none;
+    list-style-type: disc;
+}
+.ChatingPage .tg-chatarea {
+    width: 100%;
+    float: left;
+}
+.ChatingPage .tg-offersmessageswithsearch ul li:last-child .ChatingPage .tg-messages.tg-dashboardscrollbar {
+    height: 397px;
+}
+.ChatingPage .tg-offersmessages ul li .tg-messages.tg-dashboardscrollbar {
+    height: 364px;
+    margin: 0 0 20px;
+}
+.ChatingPage .tg-offersmessageswithsearch ul li .tg-dashboardscrollbar {
+    height: 558px;
+}
+.ChatingPage .tg-offersmessages ul li .tg-dashboardscrollbar {
+    height: 515px;
+}
+
+.ChatingPage .tg-dashboardscrollbar {
+    width: 100%;
+    float: left;
+    height: 330px;
+    overflow: hidden;
+}
+.ChatingPage .tg-verticalscrollbar {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ChatingPage .mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+.ChatingPage .mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+    height: 300px;
+    overflow: auto;
+}
+
+.ChatingPage .tg-messages .mCSB_inside > .mCSB_container {
+    margin: 0;
+}
+.ChatingPage .tg-dashboardscrollbar .mCSB_inside > .mCSB_container {
+    margin-right: 15px;
+}
+.ChatingPage .mCSB_inside > .mCSB_container {
+    margin-right: 14px;
+}
+.ChatingPage .mCSB_inside > .mCSB_container {
+    margin-right: 30px;
+}
+.ChatingPage .mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.ChatingPage .tg-offerermessage figure {
+    left: 0;
+}
+.ChatingPage .tg-offerermessage figure, .tg-memessage figure {
+    margin: 0;
+    bottom: 21px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+}
+.ChatingPage figure {
+    margin-bottom: 6px;
+    position: relative;
+}
+.ChatingPage .tg-description {
+    width: 100%;
+    float: left;
+}
+.ChatingPage .tg-offerermessage .tg-description p {
+    border-radius: 10px 10px 10px 0;
+}
+.ChatingPage .tg-offerermessage .tg-description p {
+    float: left;
+}
+.ChatingPage .tg-offerermessage .tg-description p, .tg-memessage .tg-description p {
+    width: auto;
+    padding: 10px;
+    font-size: 13px;
+    margin: 0 0 5px;
+    line-height: 20px;
+    background: #f7f7f7;
+}
+.ChatingPage form p {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.ChatingPage .tg-offerermessage .tg-description time {
+    text-align: left;
+}
+.ChatingPage .tg-offerermessage .tg-description time, .tg-memessage .tg-description time {
+    width: 100%;
+    float: left;
+    color: #666;
+    font-size: 11px;
+    line-height: 16px;
+}
+.ChatingPage .tg-offerermessage, .tg-memessage {
+    width: 100%;
+    float: left;
+    margin: 8px 0;
+    position: relative;
+    padding: 0 40px;
+}
+.ChatingPage .tg-offerermessage figure img, .tg-memessage figure img {
+    display: block;
+}
+
+.ChatingPage .tg-replaybox {
+    width: 90%;
+   /* border: 1px solid #eaedef;*/
+    margin-left: 40px;
+}
+.ChatingPage .tg-replaybox .form-control {
+   /* border: 0;*/
+    width: 100%;
+    float: left;
+    resize: none;
+    padding: 8px;
+    height: 100px;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 0;
+}
+.ChatingPage .tg-iconbox {
+    width: 100%;
+    float: left;
+    padding: 8px;
+    height: 50px;
+    text-align: right;
+   /* border-top: 1px solid #eaedef;*/
+}
+.ChatingPage .tg-offerer {
+
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    padding-right: 10px;
+    /*cursor: pointer;*/
+    position: relative;
+
+}
+.ChatingPage .tg-offerer:hover {  background-color: #ddecff;  border-radius: 5px;}
+.ChatingPage .tg-dotnotification {
+
+    position: relative;
+    padding-right: 26px !important;
+
+}
+.ChatingPage .tg-offerer h3 {
+
+    margin: 0;
+    color: #363b4d;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    padding: 10px 0 10px 10px;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+}
+.ChatingPage .tg-memessage .tg-description p {
+
+    border-radius: 10px 10px 0 10px;
+
+}
+.ChatingPage .tg-memessage .tg-description p {
+
+    float: right;
+
+}
+.ChatingPage .tg-offerermessage .tg-description p, .tg-memessage .tg-description p {
+
+    width: auto;
+    padding: 10px;
+    font-size: 13px;
+    margin: 0 0 5px;
+    line-height: 20px;
+    background: #f7f7f7;
+
+}
+.ChatingPage .tg-readmessage .tg-description time {
+
+    position: relative;
+    padding: 0 0 0 0;
+
+}
+.ChatingPage .tg-memessage .tg-description time {
+
+    text-align: right;
+
+}
+.ChatingPage .tg-offerermessage .tg-description time, .tg-memessage .tg-description time {
+
+    width: 100%;
+    float: left;
+    color: #666;
+    font-size: 11px;
+    line-height: 16px;
+
+}
+.ChatingPage .chatUserList {  background-color: #f6f6f6;}
+.ChatingPage .tg-offersmessages ul li + li::before {    top: 14px;    border-top: 12px solid transparent;    border-bottom: 12px solid transparent;    border-left: 12px solid #f6f6f6;}.tg-offersmessages ul li + li::before, .tg-offersmessages ul li + li::after {    width: 0;    height: 0;    left: -1px;    content: '';    position: absolute;}
+
+.ChatingPage .tg-offerer figure {
+    margin: 0;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.ChatingPage .tg-offerer figure img {
+  width: 50px;
+  height: 50px;
+}
+.ChatingPage .mCustomScrollbar {
+
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+
+}
+
+.ChatingPage ::-webkit-scrollbar, .ChatingPage ::-moz-scrollbar {
+  width: 5px;
+  -webkit-width: 5px;
+-moz-width: 5px;
+
+}
+
+/* Track */
+.ChatingPage ::-webkit-scrollbar-track, .ChatingPage  ::-moz-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius:10px;
+}
+ 
+/* Handle */
+.ChatingPage ::-webkit-scrollbar-thumb, .ChatingPage ::-moz-scrollbar-thumb {
+  background: #2967b4; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.ChatingPage ::-webkit-scrollbar-thumb:hover {
+  background: #2967b4; 
+}
+
+/*:root{
+  scrollbar-color: #B8BDC4 #6F7E8E;
+  scrollbar-track-color: yellow;
+  scrollbar-width: thin;
+scrollbar-width: auto;
+scrollbar-width: thin;
+scrollbar-width: none;
+  }*/
+
+
+@media (max-width: 575px) {
+
+  .ChatingPage .tg-offersmessages ul li {
+      width: 100% !important;
+  }
+  .ChatingPage .tg-offerer h3 {
+    display: inline-block;
+  }
+  .ChatingPage .tg-offersmessages ul .chatUserList {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  .ChatingPage .tg-replaybox {
+      width: 90%;
+      margin-left: 20px;
+  }
+}
+
+.ChatingPage #chat_user_msg{
+  background-color: #e94a37;
+  color: #fff;
+  border-radius: 0;
+}
+.ChatingPage .msg_user_chat{
+  border: 1px solid #e94a37;
+  color: #e94a37;
+  padding: 5px 5px 5px 5px;
+}
+.ChatingPage .margin-bottom-20 {
+  margin-bottom: 5px;
+}
+.ChatingPage .tg-categoriessearch .button-border, .tg-btnbox .button-border {
+    border: 1px solid #e94a37;
+    border-radius: 25px;
+    color: #e94a37;
+}
+
+.ChatingPage .tg-categoriessearch .tg-btn:before, .tg-btnbox .tg-btn:before{
+    background: transparent !important;
+}
+
+.ChatingPage .lost-page .tg-btn {
+      padding: 0 30px;
+      margin: 0px 10px;
+  }
+@media (max-width: 480px) {
+   .ChatingPage .tg-formtheme.tg-formnewsletter fieldset .form-control {
+      width: 60% !important;
+  }
+  .ChatingPage .tg-formtheme.tg-formnewsletter fieldset button {
+    width: 40% !important;
+  }
+}
+
+
+@media(min-width: 768px) and (max-width: 991px) {
+ .ChatingPage .lost-page .tg-btn {
+      padding: 0 25px;
+      margin: 0px 10px;
+  }
+ .ChatingPage .tg-formnewsletter fieldset button {
+      width: 40%;
+    }
+}
+
+@media(max-width: 767px) {
+.ChatingPage .desktop_menu {
+  display: none !important;
+}
+.ChatingPage .tg-offerermessage, .tg-memessage {
+  padding: 0px 15px;
+}
+}
+@media (max-width: 767px) {
+
+  .ChatingPage .lost-page .tg-btn {
+      padding: 0 8px;
+      margin: 0px 10px;
+      font-size: 14px;
+  }
+  .ChatingPage .tg-offerermessage, .ChatingPage .tg-memessage {
+      padding: 0 15px;
+  }
+  .ChatingPage .tg-offersmessages ul li {
+      padding: 15px 8px 0px 0px;
+  }
+  .ChatingPage .tg-offerer {
+    padding: 5px 10px;
+  }
+}
+
+
+
+.ChatingPage .tg-offerer .point_round {
+   content: "";
+  width: 10px;
+  height: 10px;
+  background:red;
+  border-radius: 50%;
+  float: right;
+  position: absolute;
+  right: 0;
+  margin: 5px;
+}
+/* Chating page Design E */
