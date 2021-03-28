@@ -15,31 +15,18 @@
 								<div class="theme_title">
 									<h3>Our Story</h3>
 								</div>
-								<div class="about_quot">
-									Burlyfield Foods was born in 2009 with a sole objective to provide natural, healthy and nutrient rich food.
-								</div>
-								<div class="text"><p>What started with dehydrating and processing Anjeer (Figs) to make delicious Anjeer powder from our very own farms near Aurangabad, turned into a philosophy which is our backbone till date.</p></div>
-								<!-- <div class="icon-box">
-									<div class="single-item">
-										<div class="icon"><i class="icon-wheat"></i></div>
-										<div class="count">745+</div>
-										<div class="name color1">Own Farm Houses</div>
-									</div>
-									<div class="single-item">
-										<div class="icon"><i class="icon-nature-1"></i></div>
-										<div class="count">2480+</div>
-										<div class="name color1">Pastoral Farmers</div>
-									</div>
 								
-
-								</div> -->
-								<div class="text">
-									<p>We observed that there are very few options available in the market when it comes to “au naturale” products and most of them lack traceability which creates a gap between the producers and customers. We simply decided to bridge this gap by following our Farm to Fork philosophy. We grow all our ingredients in our own farms, process and test them at our facility and make them available to the customer’s fork in the most natural way.</p>
-								</div>
-								<div class="text">
-									<p>Over the years we have expanded from making basic fruit powders to a wide  range of herbs, teas, flours and ready mixes. We sell across many leading online platforms and stores all over India.</p>
 								
-									<p>We aim to grow with every passing year while offering better and better easy to make, healthy products to our customers.</p>
+								<div class="text">
+									<p style="font-size:17px;">In 2009, Mrs. Jyoti Dashrathi, was trying to find a solution for old age ailments of her father. Fig, a rich source of Zinc & Iron was suggested by a renowned Ayurvedacharya.</p>
+								</div><br>
+								<div class="text">
+									<p style="font-size:17px;">Procuring fresh figs had challenges of seasonality, uncertain quality and perishability while dried figs had issues of hygiene and chewability.</p>
+									<br>
+									<p style="font-size:17px;">A Sanskrit scholar with a background in farming, she attempted growing different varieties of figs, powdering & storing them without preservatives. After almost 4 years (and many failed attempts) she ended up with the perfect fig powder and a patent in process !</p>
+								</div><br>
+								<div class="text">
+									<p style="font-size:17px;">Over years, her experiments with grain, fruit and vegetable powders led to the birth of Burlyfield kitchen solutions. Our “Nurtured by Nature” approach ensures that the natural goodness of ingredients are retained in our products.</p>
 								</div>
 								<!-- <div class="link">
 									<a href="#" class="tran3s">read more</a>
@@ -58,15 +45,26 @@
 									<h3>Our Promise</h3>
 								</div>
 								
-								
-									<p>Over the years we have expanded from making basic fruit powders to a wide  range of herbs, teas, flours and ready mixes. We sell across many leading online platforms and stores all over India.</p>
-								
-									<p>We aim to grow with every passing year while offering better and better easy to make, healthy products to our customers.</p>
+								<div class="text">
+								<b><h4>1. 100% Natural</b></h4><br>
+								<p style="font-size:17px;">With our customers’ well-being in mind, we keep our offerings 100% Natural.  BurlyField does not add any artificial flavors, colors, or preservatives.</p>
+								</div><br>
+								<div class="text">
+								<b><h4>2. Healthy Ingredients</b></h4><br>
+								<p style="font-size:17px;">BurlyField aims to support your well-being by serving nutritious food and beverages. Thus, we use the healthiest ingredients to prepare our products. Each of them contains at least one Hero Ingredient that has amazing health benefits.
+									</p>
+								</div><br>
+								<div class="text">
+								<p><b><h4>3. 90% Nutrition Lock</b></h4><br>
+								<p style="font-size:17px;">BurlyField ensures that nutrients are not lost in the value chain - from ingredient growth to production to your doorstep. As high as 90% of the nutrients are locked in by the time you consume the products.
+									</p>
+								</div>
+			
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-12">
 							<figure class="img-holder">
-								<img src="<?php echo base_url().'public/front_assets/images/About-Us.jpg'; ?>" alt="">
+								<img src="<?php echo base_url().'public/front_assets/images/Our_Promise.jpg'; ?>" alt="">
 							</figure>
 						</div>
 						</div>
@@ -81,9 +79,9 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
 							<div class="single-item ">
-								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Fresh-Farm-Produce.png'; ?>"><span>1</span></div></div></div>
+								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Special_Dehydration_Process.png'; ?>"><span>1</span></div></div></div>
 								
-								<h5>Fresh Farm Produce</h5>
+								<h5>Special Dehydration Process</h5>
 								<!-- <p>
 								<p>
 								Organicstore.com’s customers order is <br>captured by warehouse API..
@@ -94,7 +92,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
 							<div class="single-item ">
 								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Processing-&-Testing.png'; ?>"><span>2</span></div></div></div>
-								<h5>Processing & Testing</h5>
+								<h5>Production in Small Batches</h5>
 								
 								<!-- <p>
 								Organicstore.com’s customers order is <br>captured by warehouse API..
@@ -104,8 +102,10 @@
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
 							<div class="single-item ">
+								<!--<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Small_batches_production.png'; ?>"><span>3</span></div></div></div> 
+								<h5>Packing</h5>-->
 								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Packaging.png'; ?>"><span>3</span></div></div></div>
-								<h5>Packing</h5>
+								<h5> Testing & Quality Control</h5>
 								<!-- <p>
 								Organicstore.com’s customers order is <br>captured by warehouse API..
 								</p> -->
@@ -115,8 +115,10 @@
 
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center">
 							<div class="single-item ">
-								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Delivery-to-Customer.png'; ?>"><span>4</span></div></div></div>
-								<h5>Delivery to Customer</h5>
+								<!--<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Delivery-to-Customer.png'; ?>"><span>4</span></div></div></div>
+								<h5>Delivery to Customer</h5>-->
+								<div class="inner-box"><div class="icon"><div class="icon-img"><img src="<?php echo base_url().'public/front_assets/images/about/Fresh-Farm-Produce.png'; ?>"><span>4</span></div></div></div>
+								<h5>Grown in Own Farms</h5>
 								<!-- <p>
 								Organicstore.com’s customers order is <br>captured by warehouse API..
 								</p> -->
@@ -139,7 +141,7 @@
 								</div>
 							</div>
 							<div class="text">
-								<p>Awards for us are nothing but positive motivation to work harder and emerge better!</p>
+								<p style="font-size:14px;">Awards for us are nothing but positive motivation to work harder and emerge better!</p>
 							</div>
 							<div>
 								<figure class="img-holder">

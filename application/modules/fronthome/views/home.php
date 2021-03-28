@@ -1,5 +1,4 @@
-
-			<!-- Banner ____________________________________ -->
+		<!-- Banner ____________________________________ -->
 	        <div id="banner">
 	        	<div class="">
 					<!-- START REVOLUTION SLIDER 5.0 auto mode -->
@@ -7,7 +6,7 @@
 							<ul>
 								<?php foreach ($banner_img as $row1){ ?>
 								<!-- SLIDE1  -->
-								<li data-index='rs-377' data-transition='curtain-1' data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>' data-rotate='0' data-saveperformance='off' data-title='Business Solutions' data-description='' >
+								<li data-index='rs-377' data-transition='parallaxtoright' data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>' data-rotate='0' data-saveperformance='off' data-title='Business Solutions' data-description='' >
 									<!-- MAIN IMAGE -->
 									<img src="<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>"  alt="image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 									<!-- LAYERS -->
@@ -63,11 +62,11 @@
 					                </div>
 								</li>
 							<?php } ?>
-
 							</ul>	
 						</div>
 					</div><!-- END REVOLUTION SLIDER -->
 	        </div> <!-- End of #banner -->
+
 
 	        <section class="free-shifting-section">
 	        	<div class="container">
@@ -76,9 +75,6 @@
 	        		</div>
 	        	</div>
 	        </section>
-
-
-
 
 			<!-- about Section ************************** -->
 			<div class="about_section">
@@ -350,26 +346,26 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 	        					<!--<div class="img_holder">  Vaishali Magar 02-03-2021 commited -->
-									<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive">
-									<div class="opacity tran3s">
-										<div class="icon">
-											<span><a href="<?php echo base_url(); ?>blog" class="border_round">+</a></span>
-										</div> <!-- End of .icon -->
-									</div> <!-- End of .opacity -->
+									<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive" style="padding:20px; height: 225px;">
+									
 								
 								<div class="post">
 									<ul>
-										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-tag" aria-hidden="true"></i> Healthy</a></li>
+										<center>
 										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $blg['var_author']; ?></a></li>
 										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php   $date=date_create($blg['dt_createddate']);
 													echo date_format($date,"d|m|Y");
-											 ?></a></li>
+											 ?></a></li></center>
 									</ul>
 									<div class="text">
 										<h4><a href="<?php echo base_url(); ?>blog"><?php echo $blg['var_name']; ?></a></h4>
-										<p><?php echo $blg['txt_description']; ?></p>
-										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>
-										
+										<!--<p><?php echo $blg['txt_description']; ?></p>
+										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>-->
+										<!--<p><?php echo $blg['txt_description']; ?></p>-->
+										<span  class="wrap" data-toggle="tooltip" data-placement="top" title="<?php echo $blg['short_desc'];?>">
+										<p><?php echo $blg['short_desc']; ?></p>
+										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div></span>
+										<!--<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>-->
 									</div>
 									
 								</div> <!-- End of .post -->
@@ -412,8 +408,7 @@
 		                    </div> 
 		                </div>
 		                <?php } ?>
-		                
-		            	
+	
 		            </div>
 		        </div>
 		    </section>
@@ -568,3 +563,35 @@
 
        });
    </script>
+   <script>
+var charLimit = 20;
+
+function truncate(el) {
+ var clone = el.children().first(),
+     originalContent = el.html(),
+     text = clone.text();
+ el.attr("data-originalContent", originalContent);
+ clone.text(text.substring(0, charLimit) + "...")
+ el.empty().append(clone);
+}
+
+function reveal(el) {
+ el.html(el.attr("data-originalContent"));
+}
+
+$("#description").on("click", function (e) {
+ e.preventDefault();
+ var truncateElement = $(this).parent().prev().find(".truncate");
+ if ($(this).text() === "Read More") {
+ } else {
+     $(this).text("Read More");
+     truncate(truncateElement);
+ }
+});
+
+$(".truncate").each(function () {
+   truncate($(this));
+});
+ 
+
+</script>

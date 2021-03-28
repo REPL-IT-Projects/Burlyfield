@@ -54,6 +54,15 @@ class Pages extends Front_Controller {
 	    $data["blog"] = $this->model->getBlogdetails($idb);
 		$this->load_view('blog_details', $data);
 	}
+	//Vaishali Magar 16/03/2021
+	public function ingredient_details($id)
+	{ 
+		$idb = base64_decode($id);
+		$data['category'] = $this->model->getCategory();
+        $data['top_product'] = $this->model->top_product();
+	    $data["ingredient_health"] = $this->model->getIngredientdetails($idb);
+		$this->load_view('ingredient_details', $data);
+	}
 
 	public function news_details($id)
 	{ 
@@ -66,6 +75,7 @@ class Pages extends Front_Controller {
 
 	public function stores()
 	{ 
+
 	    $data["stores"] = $this->model->getStore();
 		$this->load_view('stors_near_you', $data);
 	}
@@ -133,14 +143,25 @@ class Pages extends Front_Controller {
 	//fetch all Location
 	function shop_location() 
 	{
+		echo "<script>alert('hjdbnxzchnsvcsdnb')</script>";
 		$data['location'] = $this->Pages_model->shop_location();
         return $data['location'];
 	}
 	//shop location Details
 	function shopLocation($int_glcode)
     {	
+		echo "<script>alert('hjdbnxzchnsvcsdnb')</script>";
 		$data = $this->Pages_model->shopLocation($int_glcode);
         echo json_encode($data);
     }
+	
+	
+		public function citydata($id){
+
+		$city = base64_decode($id);
+		// echo $city;die();
+	    $data["stores"] = $this->model->getStore($city);
+		$this->load_view('stors_near_you', $data);
+	}
         
 }                                    

@@ -52,6 +52,7 @@
                     <th>Image</th>
                     <th><a href="javascript:void(0);" field="var_name" class="_sort">Title</a></th>
                     <th>Date</th>
+					<th>Short Description</th>
                     <th><a href="javascript:void(0);" field="txt_description" class="_sort">Description</a></th>
                     <th>Author Name</th>
                     <th>Publish</th>
@@ -92,6 +93,7 @@
                         
                         <td><?php $date=date_create($row['dt_createddate']);
                                  echo date_format($date,"d/m/Y"); ?></td>
+						<td><?php echo $row['short_desc']; ?></td>
                         <td><?php echo $row['txt_description']; ?></td>
                         <td><?php echo $row['var_author']; ?></td>
                             <td class="center">

@@ -134,6 +134,18 @@ class Stors extends Admin_Controller {
 		echo $result;
 	}
 
+	//insert city 
+	//Vaishali Magar 
+	public function insert_city()
+	{
+		
+			// validation not ok, send validation errors to the view
+			// Set flash data 
+			$this->model->addCity();
+			$this->session->set_flashdata('Invalid', ADD_SUCCESS);
+			redirect('admin/stors');
+		
+	}
 	
 
 }                                         

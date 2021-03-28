@@ -1,3 +1,13 @@
+<script type="text/javascript" src="https://cdn.ckeditor.com/4.12.1/standard-all/ckeditor.js"></script>
+<style>
+    .parent_name {
+        font-weight: bold;
+        color: #CF4916 !important;
+    }
+    .imageThumb {
+                    width: 20%;
+                }
+</style>
 <div id="main-wrapper">
   <div class="page-wrapper">
     <div class="page-breadcrumb">
@@ -34,12 +44,17 @@
                 <input type="text" class="form-control" id="var_name" name="var_name" placeholder="Name Here" required="">
               </div>
             </div>
-            
+            <div class="form-group row">
+                <label for="var_quantity" class="col-sm-3 text-right control-label col-form-label">Short Description</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="short_desc" name="short_desc" placeholder="Product Short Description Here">
+                    </div>
+            </div>
             <div class="form-group row">
               <label for="email" class="col-sm-3 text-right control-label col-form-label">Description<span class="mandatory">*</span></label>
               <div class="col-sm-7">
-                  <textarea class="form-control" id="txt_description" name="txt_description" placeholder="Description Here" required></textarea>
-              </div>
+                         <textarea id="txt_description" class="form-control" name="txt_description" placeholder="Product Description Here"><?php echo $data['txt_description']; ?></textarea>
+                   </div>
             </div>
             <div class="form-group row">
               <label for="var_author" class="col-sm-3 text-right control-label col-form-label">Author Name<span class="mandatory">*</span></label>
@@ -68,12 +83,27 @@
 </div>
 </div>
 </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript">
-var site_path = '<?php echo base_url(); ?>';
-$(function(){
-  $('button[name=cancel]').click(function(){
-    window.location = site_path+'admin/blog';
-  });
+  var site_path = '<?php echo base_url(); ?>';
+  $(function(){
+    $('button[name=cancel]').click(function(){
+        window.location = site_path+'admin/blog';
+    });
 });
 
 </script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function (){
+  CKEDITOR.replace('txt_description');
+});
+</script>
+
+    
+
+
+

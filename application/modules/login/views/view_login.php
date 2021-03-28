@@ -4,7 +4,7 @@ if (isset($_SESSION['fk_user'])){
     redirect(base_url());
 }
 ?> 			
-      <section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/Login.jpg);">
+      <section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/20Login.jpg);">
 			    
 			</section>
 

@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="var_image" class="col-sm-3 text-right control-label col-form-label">Cover Image</label>
+                            <label for="var_image" class="col-sm-3 text-right control-label col-form-label">Cover Image 1</label>
                                   <?php
                             if ($data['var_image'] != '') {
                                 $Image = base_url().'uploads/products/'.$data['var_image'];
@@ -93,6 +93,51 @@
                             </div>
                             <a class="example-image-link" href="<?php echo $Image; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image; ?>" id="cate_ig" alt="<?php echo $Image; ?>" /></a>
                             <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image']; ?>">
+                        </div>
+						<div class="form-group row">
+                            <label for="var_image1" class="col-sm-3 text-right control-label col-form-label">Cover Image 2</label>
+                                  <?php
+                            if ($data['var_image1'] != '') {
+                                $Image1 = base_url().'uploads/products/'.$data['var_image1'];
+                            } else{
+                                $Image1 = base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+                            ?>
+                            <div class="col-sm-7">
+                                <input type="file" class="form-control" id="var_img" name="var_img">
+                            </div>
+                            <a class="example-image-link" href="<?php echo $Image1; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image1; ?>" id="cate_ig" alt="<?php echo $Image1; ?>" /></a>
+                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image1']; ?>">
+                        </div>
+						<div class="form-group row">
+                            <label for="var_image2" class="col-sm-3 text-right control-label col-form-label">Cover Image 3</label>
+                                  <?php
+                            if ($data['var_image2'] != '') {
+                                $Image2 = base_url().'uploads/products/'.$data['var_image2'];
+                            } else{
+                                $Image2 = base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+                            ?>
+                            <div class="col-sm-7">
+                                <input type="file" class="form-control" id="var_img2" name="var_img2">
+                            </div>
+                            <a class="example-image-link" href="<?php echo $Image2; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image2; ?>" id="cate_ig" alt="<?php echo $Image2; ?>" /></a>
+                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image2']; ?>">
+                        </div>
+						<div class="form-group row">
+                            <label for="var_image3" class="col-sm-3 text-right control-label col-form-label">Cover Image 4</label>
+                                  <?php
+                            if ($data['var_image3'] != '') {
+                                $Image3 = base_url().'uploads/products/'.$data['var_image3'];
+                            } else{
+                                $Image3 = base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+                            ?>
+                            <div class="col-sm-7">
+                                <input type="file" class="form-control" id="var_img3" name="var_img3">
+                            </div>
+                            <a class="example-image-link" href="<?php echo $Image3; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image3; ?>" id="cate_ig" alt="<?php echo $Image3; ?>" /></a>
+                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image3']; ?>">
                         </div>
                         <div class="form-group row">
                             <label for="var_quantity" class="col-sm-3 text-right control-label col-form-label">Short Description</label>
@@ -117,7 +162,7 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" id="var_stock" name="var_stock" placeholder="Please enter percent of product Stock" value="<?php echo $data['var_stock']; ?>" required>
                                     </div>
-                                </div>
+                         </div>
                         <div class="form-group row">
                                     <label for="var_stock" class="col-sm-3 text-right control-label col-form-label">GST %</label>
                                     <div class="col-sm-7">
@@ -168,8 +213,8 @@
                                 <textarea id="txt_nutrition" name="txt_nutrition"><?php echo $data['txt_nutrition']; ?></textarea>
                             </div>
                         </div>
-                    <div class="form-group row">
-                      <label for="var_image" class="col-sm-3 text-right control-label col-form-label">Product Images</label>
+                <div class="form-group row">
+                    <label for="var_image" class="col-sm-3 text-right control-label col-form-label">Product Images</label>
                   <div class="col-sm-7">
                     <?php
                     if (!empty($mul_images)) {
@@ -225,10 +270,15 @@
     $(this).parent().parent().parent().parent('div.con').remove();
   });
 });
-</script>
+</script> 
 <script type="text/javascript">
 $(document).ready(function (){
   CKEDITOR.replace('txt_nutrition');
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function (){
+  CKEDITOR.replace('var_description');
 });
 </script>
 <script type="text/javascript">

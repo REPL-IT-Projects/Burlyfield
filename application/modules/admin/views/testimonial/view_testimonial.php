@@ -49,6 +49,7 @@
                     </span></th>
                     <th><a href="javascript:void(0);" field="var_name" class="_sort">Name</a></th>
                     <th><a href="javascript:void(0);" field="var_position" class="_sort">Position</a></th>
+					 <th><a href="javascript:void(0);" field="var_city" class="_sort">City</a></th>
                     <th><a href="javascript:void(0);" field="txt_description" class="_sort">Description</a></th>
                     <th>Image</th>
                     <th>Publish</th>
@@ -82,7 +83,8 @@
                         <td><input type="checkbox" name="ids[]" class="checkboxes" value="<?php echo $row['int_glcode']; ?>"></td>
                         <td><a href="<?php echo base_url() . 'admin/testimonial/edit_testimonial/'. base64_encode($row['int_glcode']); ?>"><i class=" fas fa-pencil-alt"> </i> <?php echo $row['var_name']; ?></a>
                         </td>
-                        <td><?php echo $row['var_position']; ?></td>             
+                        <td><?php echo $row['var_position']; ?></td> 
+						 <td><?php echo $row['var_city']; ?></td>  
                         <td><?php echo $row['txt_description']; ?></td>
                         <td>
                             <a class="example-image-link" href="<?php echo $Image; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image; ?>" id="cate_ig" alt="<?php echo $Image; ?>" /></a>

@@ -1,4 +1,4 @@
-<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/News.jpg);">
+<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/21News.jpg);">
 			    <!-- <div class="container">
 			        <div class="row">
 			            <div class="col-md-12">
@@ -36,11 +36,7 @@
 							<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 	        					
 									<img src="<?php echo base_url().'uploads/news/'.$blg['var_image'] ?>" alt="News" class="img-responsive">
-									<div class="opacity tran3s">
-										<div class="icon">
-											<span><a href="#" class="border_round">+</a></span>
-										</div> <!-- End of .icon -->
-									</div> <!-- End of .opacity -->
+									
 								
 								<div class="post">
 									<div class="text">

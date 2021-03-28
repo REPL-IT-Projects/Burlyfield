@@ -8,12 +8,8 @@
 								<?php foreach($blog as $blg) { ?>
 								<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 		        					
-										<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive">
-										<div class="opacity tran3s">
-											<div class="icon">
-												<span><a href="" class="border_round">+</a></span>
-											</div> <!-- End of .icon -->
-										</div> <!-- End of .opacity -->
+										<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive" style="padding:10px; height: 400px; width:600">
+										
 									
 									<div class="post">
 											
@@ -21,7 +17,6 @@
 											<h4><a href="blog-details.html"><?php echo $blg['var_name']; ?></a></h4>
 											<ul>
 												<li><a href="#" class="tran3s"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $blg['var_author']; ?></a></li>
-												<li><a href="#" class="tran3s"><i class="fa fa-tag" aria-hidden="true"></i> Healthy</a></li>
 												<li><a href="#" class="tran3s"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php   $date=date_create($blg['dt_createddate']);
 													echo date_format($date,"d|m|Y");
 											 		?></a></li>

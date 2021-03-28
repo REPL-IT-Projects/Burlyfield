@@ -88,9 +88,27 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="email" class="col-sm-3 text-right control-label col-form-label">Cover Image<span class="mandatory">*</span></label>
+                                    <label for="email" class="col-sm-3 text-right control-label col-form-label">Cover Image 1<span class="mandatory">*</span></label>
                                     <div class="col-sm-7">
                                         <input type="file" class="form-control" id="var_cimg" name="var_cimg" required="">
+                                    </div>
+                                </div>
+								 <div class="form-group row">
+                                    <label for="contact" class="col-sm-3 text-right control-label col-form-label">Cover Image 2<span class="mandatory">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="file" class="form-control" id="var_img" name="var_img" required="">
+                                    </div>
+                                </div>
+								 <div class="form-group row">
+                                    <label for="contact" class="col-sm-3 text-right control-label col-form-label">Cover Image 3<span class="mandatory">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="file" class="form-control" id="var_img2" name="var_img2" required="">
+                                    </div>
+                                </div>
+								 <div class="form-group row">
+                                    <label for="contact" class="col-sm-3 text-right control-label col-form-label">Cover Image 4<span class="mandatory">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="file" class="form-control" id="var_img3" name="var_img3" required="">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -190,6 +208,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
         CKEDITOR.replace('add_txt_nutrition');
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        CKEDITOR.replace('var_description');
     });
 </script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />

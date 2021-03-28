@@ -49,6 +49,7 @@
                     </span></th>
                     <th><a href="javascript:void(0);" field="var_name" class="_sort">Name</a></th>
                     <th><a href="javascript:void(0);" field="var_position" class="_sort">Address</a></th>
+					<th>City</th>
                     <th>Latitude</th>
                     <th>Longitude</th>
                     <th>Publish</th>
@@ -75,7 +76,8 @@
                         <td><input type="checkbox" name="ids[]" class="checkboxes" value="<?php echo $row['int_glcode']; ?>"></td>
                         <td><a href="<?php echo base_url() . 'admin/stors/edit_stors/'. base64_encode($row['int_glcode']); ?>"><i class=" fas fa-pencil-alt"> </i> <?php echo $row['var_name']; ?></a>
                         </td>
-                        <td><?php echo $row['var_address']; ?></td>             
+                        <td><?php echo $row['var_address']; ?></td> 
+						<td><?php echo $row['var_state']; ?></td>  						
                         <td><?php echo $row['var_lat']; ?></td>
                         <td><?php echo $row['var_long']; ?></td>
                         

@@ -61,7 +61,7 @@ class Product_Model extends CI_Model {
 
     public function getProducts($rowno,$rowperpage,$search = '',$_field = 'mp.int_glcode',$_sort = 'desc',$country = '',$catid='',$offer=''){
    
-       $this->db->select('mp.int_glcode,mp.fk_category,mp.var_title,mp.var_image,mp.var_offer,mp.var_stock');
+       $this->db->select('mp.int_glcode,mp.fk_category,mp.var_title,mp.var_image,mp.var_image1,mp.var_image2,mp.var_image3,mp.var_offer,mp.var_stock');
         $this->db->where('mp.chr_publish','Y');
         $this->db->where('mp.chr_delete','N');
 

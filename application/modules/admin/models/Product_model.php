@@ -285,6 +285,7 @@ class Product_model extends CI_Model {
         // $var_pincode = $this->input->post('var_pincode');
         
         // echo "<pre>"; print_r($var_pincode); die();
+		//image 1
         if($_FILES['var_cimg']['name'] != '')
         {
             if (!is_dir('uploads/products')) {
@@ -314,6 +315,96 @@ class Product_model extends CI_Model {
             } else {
                 $filename =  '';
             }
+			// image 1
+			 if($_FILES['var_img']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
+                $filename1 = time().'_'.$_FILES['var_img']['name'];
+                $filename1 = str_replace('&', "_", $filename1);
+                $filename1 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $filename1);
+                $destination1 = 'uploads/products/';
+                move_uploaded_file($_FILES['var_img']['tmp_name'],$destination1.$filename1);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                    $config['image_library'] = 'gd2';
+                    $config['source_image'] = $destination1.$filename1;
+                    $config['new_image'] =  'uploads/products/thumb_img/'.$filename1;
+                    $config['create_thumb'] = FALSE;
+                    $config['maintain_ratio'] = TRUE;
+                    $config['width']     = 100;
+                    $config['height']   = 100;
+
+                    $this->image_lib->clear();
+                    $this->image_lib->initialize($config);
+                    $this->image_lib->resize();
+            } else {
+                $filename1 =  '';
+            }
+			// image 2
+			 if($_FILES['var_img2']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
+                $filename2 = time().'_'.$_FILES['var_img2']['name'];
+                $filename2 = str_replace('&', "_", $filename2);
+                $filename2 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $filename2);
+                $destination1 = 'uploads/products/';
+                move_uploaded_file($_FILES['var_img']['tmp_name'],$destination2.$filename2);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                    $config['image_library'] = 'gd2';
+                    $config['source_image'] = $destination2.$filename2;
+                    $config['new_image'] =  'uploads/products/thumb_img/'.$filename2;
+                    $config['create_thumb'] = FALSE;
+                    $config['maintain_ratio'] = TRUE;
+                    $config['width']     = 100;
+                    $config['height']   = 100;
+
+                    $this->image_lib->clear();
+                    $this->image_lib->initialize($config);
+                    $this->image_lib->resize();
+            } else {
+                $filename2 =  '';
+            }
+         // image 3
+			 if($_FILES['var_img3']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
+                $filename3 = time().'_'.$_FILES['var_img3']['name'];
+                $filename3 = str_replace('&', "_", $filename3);
+                $filename3 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $filename3);
+                $destination1 = 'uploads/products/';
+                move_uploaded_file($_FILES['var_img']['tmp_name'],$destination3.$filename3);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                    $config['image_library'] = 'gd2';
+                    $config['source_image'] = $destination3.$filename3;
+                    $config['new_image'] =  'uploads/products/thumb_img/'.$filename3;
+                    $config['create_thumb'] = FALSE;
+                    $config['maintain_ratio'] = TRUE;
+                    $config['width']     = 100;
+                    $config['height']   = 100;
+
+                    $this->image_lib->clear();
+                    $this->image_lib->initialize($config);
+                    $this->image_lib->resize();
+            } else {
+                $filename3 =  '';
+            }
          
         //echo "<pre>"; print_r($_POST); exit();
         $data = array(
@@ -321,6 +412,9 @@ class Product_model extends CI_Model {
             
 	        'var_title' => $this->input->post('var_name'),
             'var_image' => $filename,
+			 'var_image1' => $filename1,
+			  'var_image2' => $filename2,
+			   'var_image3' => $filename3,
             'var_short_description' => $this->input->post('var_short_desc'),
 	        'txt_description' => $this->input->post('var_description'),
             'var_offer' => $this->input->post('var_offer'),
@@ -335,6 +429,7 @@ class Product_model extends CI_Model {
      	);
 
         $id = $this->common_model->insertRow($data, "mst_products");
+		
         if (isset($_POST['var_quantity'])) {
             $quantity_Arr = $_POST['var_quantity'];
 
@@ -401,7 +496,7 @@ class Product_model extends CI_Model {
         // }
         // echo "<pre>"; print_r($quantity); exit();
         
-
+//image update
         if($_FILES['var_cimg']['name'] != '')
         {
             if (!is_dir('uploads/products')) {
@@ -445,7 +540,141 @@ class Product_model extends CI_Model {
             $this->image_lib->initialize($config);
             $this->image_lib->resize();
         }
+		 //vaishali magar 15-03-2021
+		 //image 1
+        if($_FILES['var_img']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
 
+            $cover_file1 = time().'_'.$_FILES['var_img']['name'];
+            $cover_file1 = str_replace('&', "_", $cover_file1);
+            $cover_file1 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $cover_file1);
+            $destination1 = 'uploads/products/';
+            move_uploaded_file($_FILES['var_img']['tmp_name'],$destination1.$cover_file1);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                $config['image_library'] = 'gd2';
+                $config['source_image'] = $destination1.$cover_file1;
+                $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file1;
+                $config['create_thumb'] = FALSE;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']     = 100;
+                $config['height']   = 100;
+
+                $this->image_lib->clear();
+                $this->image_lib->initialize($config);
+                $this->image_lib->resize();
+
+        } else {
+            $cover_file1 =  $this->input->post('hidvar_image1');
+            $destination1 = 'uploads/products/';
+            $config['image_library'] = 'gd2';
+            $config['source_image'] = $destination1.$cover_file1;
+            $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file1;
+            $config['create_thumb'] = FALSE;
+            $config['maintain_ratio'] = TRUE;
+            $config['width']     = 100;
+            $config['height']   = 100;
+
+            $this->image_lib->clear();
+            $this->image_lib->initialize($config);
+            $this->image_lib->resize();
+        }
+		 //vaishali magar 25-03-2021
+		 //image 2
+        if($_FILES['var_img2']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
+
+            $cover_file2 = time().'_'.$_FILES['var_img2']['name'];
+            $cover_file2 = str_replace('&', "_", $cover_file2);
+            $cover_file2 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $cover_file2);
+            $destination2 = 'uploads/products/';
+            move_uploaded_file($_FILES['var_img2']['tmp_name'],$destination2.$cover_file2);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                $config['image_library'] = 'gd2';
+                $config['source_image'] = $destination2.$cover_file2;
+                $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file2;
+                $config['create_thumb'] = FALSE;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']     = 100;
+                $config['height']   = 100;
+
+                $this->image_lib->clear();
+                $this->image_lib->initialize($config);
+                $this->image_lib->resize();
+
+        } else {
+            $cover_file2 =  $this->input->post('hidvar_image2');
+            $destination2 = 'uploads/products/';
+            $config['image_library'] = 'gd2';
+            $config['source_image'] = $destination2.$cover_file2;
+            $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file2;
+            $config['create_thumb'] = FALSE;
+            $config['maintain_ratio'] = TRUE;
+            $config['width']     = 100;
+            $config['height']   = 100;
+
+            $this->image_lib->clear();
+            $this->image_lib->initialize($config);
+            $this->image_lib->resize();
+        }
+		 //vaishali magar 25-03-2021
+		 //image 3
+        if($_FILES['var_img3']['name'] != '')
+        {
+            if (!is_dir('uploads/products')) {
+                mkdir('uploads/products', 0777, TRUE);
+            }
+
+            $cover_file3 = time().'_'.$_FILES['var_img3']['name'];
+            $cover_file3 = str_replace('&', "_", $cover_file3);
+            $cover_file3 = preg_replace('/[^a-zA-Z0-9\[\]\.(\)&-\']/s', '', $cover_file3);
+            $destination3 = 'uploads/products/';
+            move_uploaded_file($_FILES['var_img3']['tmp_name'],$destination3.$cover_file3);
+
+                if (!is_dir('uploads/products/thumb_img')) {
+                    mkdir('uploads/products/thumb_img', 0777, TRUE);
+                }
+
+                $config['image_library'] = 'gd2';
+                $config['source_image'] = $destination3.$cover_file3;
+                $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file3;
+                $config['create_thumb'] = FALSE;
+                $config['maintain_ratio'] = TRUE;
+                $config['width']     = 100;
+                $config['height']   = 100;
+
+                $this->image_lib->clear();
+                $this->image_lib->initialize($config);
+                $this->image_lib->resize();
+
+        } else {
+            $cover_file3 =  $this->input->post('hidvar_image3');
+            $destination3 = 'uploads/products/';
+            $config['image_library'] = 'gd2';
+            $config['source_image'] = $destination3.$cover_file3;
+            $config['new_image'] =  'uploads/products/thumb_img/'.$cover_file3;
+            $config['create_thumb'] = FALSE;
+            $config['maintain_ratio'] = TRUE;
+            $config['width']     = 100;
+            $config['height']   = 100;
+
+            $this->image_lib->clear();
+            $this->image_lib->initialize($config);
+            $this->image_lib->resize();
+        }
         // echo "<pre>"; print_r($_POST);
         //  echo "<pre>"; print_r($_FILES); exit();
         if (isset($_FILES['var_image'])) {
@@ -476,6 +705,9 @@ class Product_model extends CI_Model {
             
             'var_title' => $this->input->post('var_name'),
             'var_image' => $cover_file,
+			'var_image1' => $cover_file1,
+			'var_image2' => $cover_file2,
+			'var_image3' => $cover_file3,
             'var_short_description' => $this->input->post('var_short_desc'),
             'txt_description' => $this->input->post('var_description'),
             'var_offer' => $this->input->post('var_offer'),

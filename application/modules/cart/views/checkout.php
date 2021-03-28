@@ -1,4 +1,4 @@
-<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/Checkout.jpg);">
+<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/19Checkout.jpg);">
 			    <!-- <div class="container">
 			        <div class="row">
 			            <div class="col-md-12">

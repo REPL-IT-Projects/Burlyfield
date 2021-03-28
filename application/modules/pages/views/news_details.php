@@ -7,14 +7,9 @@
 							<div class="single_left_bar">
 								<?php foreach($news as $blg) { ?>
 								<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-		        					<div class="img_holder">
+		        					
 										<img src="<?php echo base_url().'uploads/news/'.$blg['var_image'] ?>" alt="News" class="img-responsive">
-										<div class="opacity tran3s">
-											<div class="icon">
-												<span><a href="" class="border_round">+</a></span>
-											</div> <!-- End of .icon -->
-										</div> <!-- End of .opacity -->
-									</div> <!-- End of .img_holder -->
+									
 									<div class="post">
 											
 										<div class="text">

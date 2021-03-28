@@ -1,4 +1,4 @@
-<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/Shopping-Cart.jpg);">
+<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/16shoppingCart.jpg);">
 			    
 			    
 			</section>

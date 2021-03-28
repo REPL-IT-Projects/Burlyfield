@@ -79,6 +79,7 @@ class Stors_model extends CI_Model {
 	        $data = array(
 		        'var_name' => $this->input->post('var_name'),
 		        'var_address' => $this->input->post('var_address'),
+				'var_state' => $this->input->post('var_state'),
 		        'var_lat' => $this->input->post('var_lat'),
                 'var_long' => $this->input->post('var_long'),
 		        'chr_publish' => 'Y',
@@ -91,8 +92,7 @@ class Stors_model extends CI_Model {
         return TRUE;
 
     }
-
-
+	
     /*---------------------------- update user admin ----------------------*/
     public function updateRecord($userId)
     {
@@ -101,6 +101,7 @@ class Stors_model extends CI_Model {
         $data = array(
 	        'var_name' => $this->input->post('var_name'),
 		        'var_address' => $this->input->post('var_address'),
+				'var_state' => $this->input->post('var_state'),
 		        'var_lat' => $this->input->post('var_lat'),
                 'var_long' => $this->input->post('var_long')
      	);
@@ -155,6 +156,25 @@ class Stors_model extends CI_Model {
 
         echo ($a) ? "1" : "0";
         exit;
+    }
+	
+	//Vaishali Magar 
+	//Add City  24/03/2021
+	public function addCity()
+    {
+        
+	        $data = array(
+		       
+		        'var_city' => $this->input->post('txt_City'),
+				//'var_state' => $this->input->post('var_state'),
+		       
+	     	);
+
+        $id = $this->common_model->insertRow($data, "mst_city");
+        
+        //  echo $this->db->last_query(); die();
+        return TRUE;
+
     }
 
     

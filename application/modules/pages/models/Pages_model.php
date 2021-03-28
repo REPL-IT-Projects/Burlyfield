@@ -75,10 +75,26 @@ class Pages_model extends CI_Model {
         return $row;
     }
 
-    public function getStore(){
+   /* public function getStore(){
         
         $this->db->select('*');
         $this->db->from('mst_stors');
+		$this->db->group_by('location'); 
+        $this->db->where('chr_publish','Y');
+        $this->db->where('chr_delete','N');
+        $query = $this->db->get();
+        $row = $query->result_array();
+
+        return $row;
+   } */
+	 public function getStore($city='')
+	 {
+        
+        $this->db->select('*');
+        $this->db->from('mst_stors');
+        if($city != ''){
+        $this->db->where('var_state',$city);
+        }
         $this->db->where('chr_publish','Y');
         $this->db->where('chr_delete','N');
         $query = $this->db->get();
@@ -173,6 +189,18 @@ class Pages_model extends CI_Model {
 
         return $row;
     }
+	// Vaishali Magar 16/03/2021
+	 public function getIngredientdetails($id)
+    {  
+        $this->db->select('*');
+        $this->db->from('mst_ingredient');
+        $this->db->where('int_glcode',$id);
+        $query = $this->db->get();
+        $result = $query->result_array();
+        
+        return $result;
+    }
+
 	// Fetch shop city
     public function shop_city()
     {
@@ -207,7 +235,7 @@ class Pages_model extends CI_Model {
     
 	 //fetch plant Location details
     public function shopLocation($int_glcode) {
-        $condition = "int_glcode =" . "'" . $int_glcode . "'";
+        $condition = "location =" . "'" . $int_glcode . "'";
         $this->db->select('*');
         $this->db->from('mst_stors');
         $this->db->where($condition);

@@ -85,7 +85,10 @@
                     </span></th>
                     <th><a href="javascript:void(0);" field="var_title" class="_sort">Product Title</a></th>
                     <th><a href="javascript:void(0);" field="cate_name" class="_sort">Category</a></th>
-                    <th>Image</th>
+                    <th>Image 1</th>
+					<th>Image 2</th>
+					<th>Image 3</th>
+					<th>Image 4</th>
                     <th>Weight & Price</th>
                     <th>Publish</th>
                 </tr>
@@ -105,11 +108,35 @@
                             }
                             if ($row['var_image'] != '') {
                                 $Image = base_url().'uploads/products/'.$row['var_image'];
-                            } else {
+                            } 
+							
+							else {
                                 $Image =base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+							 if ($row['var_image1'] != '') {
+                                $Image1 = base_url().'uploads/products/'.$row['var_image1'];
+                            } 
+							
+							else {
+                                $Image1 =base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+							 if ($row['var_image2'] != '') {
+                                $Image2 = base_url().'uploads/products/'.$row['var_image2'];
+                            } 
+							
+							else {
+                                $Image2 =base_url().'public/assets/images/site_imges/no_image.png';
+                            }
+							 if ($row['var_image3'] != '') {
+                                $Image3 = base_url().'uploads/products/'.$row['var_image3'];
+                            } 
+							
+							else {
+                                $Image3 =base_url().'public/assets/images/site_imges/no_image.png';
                             }
                            
                             ?>
+
                         <tr id="<?php echo $row["int_glcode"]; ?>">
                         <td><input type="checkbox" name="ids[]" class="checkboxes" value="<?php echo $row['int_glcode']; ?>"></td>
                         <td><a href="<?php echo base_url() . 'admin/products/editProduct/'. base64_encode($row['int_glcode']); ?>"><i class=" fas fa-pencil-alt"> </i> <?php echo $row['var_title']; ?></a>
@@ -118,6 +145,15 @@
                           
                         <td>
                             <a class="example-image-link" href="<?php echo $Image; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image; ?>" id="cate_ig" alt="<?php echo $Image; ?>" /></a>
+                        </td>
+						<td>
+                            <a class="example-image-link" href="<?php echo $Image1; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image1; ?>" id="cate_ig1" alt="<?php echo $Image1; ?>" /></a>
+                        </td>
+						<td>
+                            <a class="example-image-link" href="<?php echo $Image2; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image2; ?>" id="cate_ig1" alt="<?php echo $Image2; ?>" /></a>
+                        </td>
+						<td>
+                            <a class="example-image-link" href="<?php echo $Image3; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image3; ?>" id="cate_ig1" alt="<?php echo $Image3; ?>" /></a>
                         </td>
                             <td>
                                 <?php echo $row['price_details']; ?>

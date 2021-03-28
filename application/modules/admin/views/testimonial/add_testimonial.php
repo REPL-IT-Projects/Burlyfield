@@ -40,6 +40,14 @@
                   <input type="text" class="form-control" id="var_position" name="var_position" placeholder="Position Here" required="">
               </div>
             </div>
+			<!--City added 21/03/2021-->
+			<div class="form-group row">
+              <label for="city" class="col-sm-3 text-right control-label col-form-label">City<span class="mandatory">*</span></label>
+              <div class="col-sm-7">
+                  <input type="text" class="form-control" id="var_city" name="var_city" placeholder="City Here" required="">
+              </div>
+            </div>
+			
             <div class="form-group row">
               <label for="email" class="col-sm-3 text-right control-label col-form-label">Description<span class="mandatory">*</span></label>
               <div class="col-sm-7">

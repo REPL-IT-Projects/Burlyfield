@@ -1,4 +1,4 @@
-<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/Blog.jpg);">
+<section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/24Ingredients_for_health.jpg);">
 			    <!-- <div class="container">
 			        <div class="row">
 			            <div class="col-md-12">
@@ -34,25 +34,19 @@
 							<div class="col-md-4 col-sm-6 col-xs-12 isotop_item">
 							<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
 	        				
-									<img src="<?php echo base_url().'uploads/ingredient/'.$ing['var_image'] ?>" alt="News" class="img-responsive">
-									<div class="opacity tran3s">
-										<div class="icon">
-											<span><a href="#" class="border_round">+</a></span>
-										</div> <!-- End of .icon -->
-									</div> <!-- End of .opacity -->
-								
+									<img src="<?php echo base_url().'uploads/ingredient/'.$ing['var_image'] ?>" alt="News" class="img-responsive" style="padding:20px; height:225px;">
+													
 								<div class="post">
 									<div class="text">
-										<!--<h4><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($ing['int_glcode']);?>"><?php echo $ing['var_name']; ?></a></h4>-->
+										<h4><a href="<?php echo base_url().'pages/ingredient_details/'.base64_encode($ing['int_glcode']);?>"><?php echo $ing['var_name']; ?></a></h4>
 										<ul>
-											<li><a href="" class="tran3s"><i class="fa fa-tag" aria-hidden="true"></i> Healthy</a></li>
 											<li><a href="" class="tran3s"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $ing['var_author']; ?></a></li>
 											<li><a href="" class="tran3s"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php   $date=date_create($ing['dt_createddate']);
 													echo date_format($date,"d|m|Y");
 											 ?></a></li>
 										</ul>
 										<p><?php echo $ing['txt_description']; ?></p>
-										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($ing['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>
+										<div class="link"><a href="<?php echo base_url().'pages/ingredient_details/'.base64_encode($ing['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>
 										
 									</div>
 									

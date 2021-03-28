@@ -1,0 +1,44 @@
+
+
+			<section class="news single_news_page with_sidebar news_single">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-sm-8 col-xs-12">
+							<div class="single_left_bar">
+								<?php foreach($ingredient_health as $ing) { ?>
+								<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+		        					
+										<img src="<?php echo base_url().'uploads/ingredient/'.$ing['var_image'] ?>" alt="News" class="img-responsive"style="padding:10px; height: 500px; width:10000">
+										<div class="opacity tran3s">
+											<div class="icon">
+												<span><a href="" class="border_round">+</a></span>
+											</div> <!-- End of .icon -->
+										</div> <!-- End of .opacity -->
+									
+									<div class="post">
+											
+										<div class="text">
+											<h4><a href="ingredient_details.html"><?php echo $ing['var_name']; ?></a></h4>
+											<ul>
+												<li><a href="#" class="tran3s"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $ing['var_author']; ?></a></li>
+												<li><a href="#" class="tran3s"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php   $date=date_create($ing['dt_createddate']);
+													echo date_format($date,"d|m|Y");
+											 		?></a></li>
+												<!-- <li><a href="blog-details.html" class="tran3s"><i class="fa fa-comments" aria-hidden="true"></i> 26</a></li>
+												<li><a href="blog-details.html" class="tran3s"><i class="fa fa-heart" aria-hidden="true"></i> 26</a></li> -->
+											</ul>
+											<p><?php echo $ing['txt_description']; ?></p>
+											
+										</div>
+										
+									</div> <!-- End of .post -->
+		        				</div>
+								<?php } ?>
+							</div>
+						</div>
+								
+					
+						
+					</div>
+				</div>
+			</section>

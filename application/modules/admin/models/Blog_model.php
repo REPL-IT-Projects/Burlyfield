@@ -94,6 +94,7 @@ class Blog_model extends CI_Model {
 
 	        $data = array(
 		        'var_name' => $this->input->post('var_name'),
+				'short_desc' => $this->input->post('short_desc'),
 		        'txt_description' => $this->input->post('txt_description'),
                 'var_author' => $this->input->post('var_author'),
 		        'var_image' => $filename,
@@ -132,6 +133,7 @@ class Blog_model extends CI_Model {
        
         $data = array(
 	        'var_name' => $this->input->post('var_name'),
+			'short_desc' => $this->input->post('short_desc'),
             'txt_description' => $this->input->post('txt_description'),
             'var_author' => $this->input->post('var_author'),
 	        'var_image' => $filename,

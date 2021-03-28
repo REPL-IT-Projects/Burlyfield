@@ -139,7 +139,7 @@ $image = base_url().'uploads/category/'.$value['var_icon']; }?>
 										<?php foreach($category as $row4){ ?> 
 										<li><a href="<?php echo base_url().'product/category/'.base64_encode($row4['int_glcode']);?>" class="tran3s" rel="nofollow"><?php echo $row4['var_title'];?></a></li>
 									<?php } ?>
-										<li><a href="<?php echo base_url().'product';?>" class="tran3s">Others</a></li>
+										
 										<!-- <li><a href="" class="tran3s">Fruits & Drinks   (06)</a></li>
 										<li><a href="" class="tran3s">Fresh Meat   (12)</a></li>
 										<li><a href="" class="tran3s">Beauty Care   (14)</a></li> -->

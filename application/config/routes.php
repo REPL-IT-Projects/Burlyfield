@@ -65,7 +65,7 @@ $route['stor_rereset_password/(:any)'] = 'admin/vendor/store_reset_password/$1';
 $route['reset_password'] = 'admin/vendor/reset_password';
 $route['expired_password'] = 'admin/vendor/expired_password';
 $route['admin/vendor_log_history'] = 'admin/vendor/vendor_log_history';
-//$route['admin/ingredient_health'] = 'admin/ingredient_health';
+
 
 $route['register'] = 'login/register';
 $route['signup'] = 'login/signup';

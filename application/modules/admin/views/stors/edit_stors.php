@@ -33,6 +33,17 @@
                   <input type="text" class="form-control" id="var_address" name="var_address" value="<?php echo $data['var_address']; ?>" placeholder="Position Here" required="">
               </div>
             </div>
+			 <div class="form-group row">
+				<label for="var_city" class="col-sm-3 text-right control-label col-form-label">City<span class="mandatory">*</span></label>
+			 &nbsp;&nbsp;<select data-style="g-select" data-width="10%" name="var_state" class="form-control" style="width:200px">
+							<option value="<?php echo $data['var_state']; ?>" ><?php echo $data['var_state']; ?></option>
+			            	<?php 
+			            	$stor = $this->db->get('mst_city')->result_array();
+			            	foreach($stor as $str) { ?>
+			            		<option value="<?php echo $str['intglcode']; ?>"><?php echo $str['var_city']; ?></option>
+			            	<?php } ?>
+						</select>
+			 </div>
             <div class="form-group row">
               <label for="var_lat" class="col-sm-3 text-right control-label col-form-label">Latitude<span class="mandatory">*</span></label>
               <div class="col-sm-7">

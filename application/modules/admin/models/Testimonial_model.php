@@ -22,6 +22,7 @@ class Testimonial_model extends CI_Model {
             $this->db->group_start();
             $this->db->like("var_name" , $search);
             $this->db->or_like("var_position" , $search);
+			$this->db->or_like("var_city" , $search);
             $this->db->or_like("txt_description" , $search);
             $this->db->or_like("var_image" , $search); 
             $this->db->group_end();
@@ -51,6 +52,7 @@ class Testimonial_model extends CI_Model {
             $this->db->group_start();
             $this->db->like("var_name" , $search);
             $this->db->or_like("var_position" , $search);
+			$this->db->or_like("var_city" , $search);
             $this->db->or_like("txt_description" , $search);
             $this->db->or_like("var_image" , $search); 
             $this->db->group_end();
@@ -97,6 +99,7 @@ class Testimonial_model extends CI_Model {
 	        $data = array(
 		        'var_name' => $this->input->post('var_name'),
 		        'var_position' => $this->input->post('var_position'),
+				 'var_city' => $this->input->post('var_city'),
 		        'txt_description' => $this->input->post('txt_description'),
 		        'var_image' => $filename,
 		        'chr_publish' => 'Y',
@@ -135,6 +138,7 @@ class Testimonial_model extends CI_Model {
         $data = array(
 	        'var_name' => $this->input->post('var_name'),
                 'var_position' => $this->input->post('var_position'),
+				 'var_city' => $this->input->post('var_city'),
                 'txt_description' => $this->input->post('txt_description'),
 	        'var_image' => $filename,
 	        'dt_modifydate' => date('Y-m-d H:i:s'),
