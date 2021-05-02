@@ -27,7 +27,7 @@
 
 
       $('#pagination').html(response.pagination);            
-
+	  
       createTable(response.result,response.row,response.total_rows,response.total_data);
     }
   });

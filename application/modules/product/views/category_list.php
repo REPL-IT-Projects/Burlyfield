@@ -54,12 +54,22 @@ $image = base_url().'uploads/category/'.$value['var_icon']; }?>
 					                        	<h3><a href="<?php echo base_url().'product/detail/'.base64_encode($row1['int_glcode']);?>"><?php echo $row1['var_title'];?></a></h3>
 					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
 					                            <div class="price">&#x20b9;<?php echo $row1['var_price'];?>&nbsp;(<?php echo $row1['var_quantity'];?>)</div>
-					                        </div>
-					                        <div class="overlay-box">
+												<?php if($row1['var_stock'] == 0)
+												{ ?> 
+												<a href="javascript:;"><span class="btn btn-danger" id="OutOffStock">Out Off Stock</span></a>		
+												<?php }
+												else{ 
+													 if($row1['var_stock'] < 5) 
+													{ ?><span><?php echo $row1['var_stock']." Items left";?></span>
+													<?php }?>
+													<br><a href="javascript:;" onclick="add_to_cart('<?php echo $row1['q_id'];?>','1','<?php echo $row1['int_glcode'];?>','<?php echo $row1['var_offer'];?>')"><span class="btn btn-primary"  id="AddToCart">ADD TO CART</span></a>	
+													<?php  } ?>
+											</div>
+					                  <!--  <div class="overlay-box">
 					                        	<div class="inner">
 						                        	<div class="top-content">
 						                        		<ul>
-						                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> -->
+						                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> 
 						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span>
 						                        			<?php // if(isset($_SESSION['fk_user'])){ ?>
         				                        			<a href="javascript:;" onclick="add_to_cart('<?php echo $row1['q_id'];?>','1','<?php echo $row1['int_glcode'];?>','<?php echo $row1['var_offer'];?>')"><span class="icon-icon-32846"></span></a>
@@ -68,7 +78,7 @@ $image = base_url().'uploads/category/'.$value['var_icon']; }?>
         													<?php // } ?>
 																
 															</li>
-						                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> -->
+						                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> 
 						                        		</ul>
 						                        	</div>
 						                        	<div class="bottom-content">
@@ -78,7 +88,7 @@ $image = base_url().'uploads/category/'.$value['var_icon']; }?>
 						                        		<p>&#x20b9;<?php echo $row1['var_price'];?>&nbsp;(<?php echo $row1['var_quantity'];?>)</p>
 						                        	</div>
 					                        	</div>
-					                        </div>
+					                        </div>-->
 						                </div>
 					                </div>
 					            </div>
@@ -486,5 +496,13 @@ function createTable(result,sno,total_rows,total_users){
     }
     
   }
+   //Alert for ADD TO CART
+	 $(document).ready ( function () 
+	{
+		$(document).on('click', "#AddToCart", function () 
+		{
+			alert("Product added to your cart");
+		});
+	});
 
 </script>

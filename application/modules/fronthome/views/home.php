@@ -1,14 +1,17 @@
-		<!-- Banner ____________________________________ -->
+
+
+			<!-- Banner ____________________________________ -->
 	        <div id="banner">
-	        	<div class="">
+			
+	        	<div class="rev_slider_wrapper">
 					<!-- START REVOLUTION SLIDER 5.0 auto mode -->
 						<div id="main_slider" class="rev_slider" data-version="5.0">
 							<ul>
 								<?php foreach ($banner_img as $row1){ ?>
 								<!-- SLIDE1  -->
-								<li data-index='rs-377' data-transition='parallaxtoright' data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>' data-rotate='0' data-saveperformance='off' data-title='Business Solutions' data-description='' >
+								<li data-index='rs-377' data-transition='parallaxtoright' data-delay="100ms" data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>' data-rotate='0' data-saveperformance='off'  data-title='Business Solutions' data-description='' >
 									<!-- MAIN IMAGE -->
-									<img src="<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>"  alt="image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+									<img src="<?php echo base_url().'uploads/banner_img/'.$row1['var_image']; ?>"  alt="image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"  class="rev-slidebg" style="max-width: 100%;height: auto;">
 									<!-- LAYERS -->
 
 									<!-- LAYER NR. 1 -->
@@ -18,7 +21,7 @@
 										data-width="none"
 										data-height="none"
 										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0.01;s:1500;e:Power3.easeInOut;" 
+										data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
 										data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
 										data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
@@ -31,11 +34,10 @@
 									</div>
 
 									<!-- LAYER NR. 2 -->
-									<div class="tp-caption tp-resizeme text-center"
+									
+					                <div class="tp-caption tp-resizeme text-center"
 					                    data-x="center" data-hoffset="0" 
 					                    data-y="center" data-voffset="-40"
-										data-width="none"
-										data-height="none"
 					                    data-transform_idle="o:1;"         
 					                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
 					                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
@@ -45,6 +47,7 @@
 					                    data-start="500">
 					                    <!-- <div class="banner-caption-h2"><?php echo $row1['var_title'];?></div>  -->                   
 					                </div>
+					                   
 					                <div class="tp-caption tp-resizeme text-center"
 					                    data-x="center" data-hoffset="0" 
 					                    data-y="top" data-voffset="360"
@@ -59,14 +62,14 @@
 					                    <!-- <div class="banner-caption-h3">With Your Affortable</div>                   -->
 					                    <!-- <div class="banner-caption-p"><p><?php echo $row1['txt_description'];?></p></div>                  
 					                    <a href="<?php echo base_url(); ?>product" class="color1-bg contuct-us">shop now</a> -->
-					                </div>
+					                </div>             					         
 								</li>
 							<?php } ?>
+
 							</ul>	
 						</div>
 					</div><!-- END REVOLUTION SLIDER -->
 	        </div> <!-- End of #banner -->
-
 
 	        <section class="free-shifting-section">
 	        	<div class="container">
@@ -177,21 +180,34 @@
 			                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
 			                            <div class="price">&#x20b9;<?php echo $pvalue['var_price']; ?>&nbsp;
 																(<?php echo $pvalue['var_quantity']; ?>) </div>
+				                        <?php if($pvalue['var_stock'] == 0)
+										{ ?> 
+										<a href="javascript:;"><span class="btn btn-danger" id="OutOffStock">Out Off Stock</span></a>		
+										<?php }
+										
+                                       
+										else{ 
+										 if($pvalue['var_stock'] < 5) 
+										{ ?><span><?php echo $pvalue['var_stock']." Items left";?></span>
+										<?php }?>
+										<br><a href="javascript:;" onclick="add_to_cart('<?php echo $pvalue['q_id'];?>','1','<?php echo $pvalue['int_glcode'];?>','<?php echo $pvalue['var_offer'];?>')"><span class="btn btn-primary"  id="AddToCart">ADD TO CART</span></a>	
+										<?php  } ?>
 			                        </div>
-			                        <div class="overlay-box">
+			                      <!--  <div class="overlay-box">
 			                        	<div class="inner">
 				                        	<div class="top-content">
 				                        		<ul>
-				                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> -->
+				                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> 
 				                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span>
 				                        			
 				                        			<a href="javascript:;" onclick="add_to_cart('<?php echo $pvalue['q_id'];?>','1','<?php echo $pvalue['int_glcode'];?>','<?php echo $pvalue['var_offer'];?>')"><span class="icon-icon-32846"></span></a>
 													
+													
 													</li>
-				                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> -->
+				                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> 
 				                        		</ul>
 				                        		
-				                        	</div>
+				                        	</div>  
 				                        	<div class="bottom-content">
 				                        		<h4><a href="<?php echo base_url().'product/detail/'.base64_encode($pvalue['int_glcode']);?>"><?php echo $pvalue['var_title']; ?></a></h4>
 				                        		<p><?php if($pvalue['var_stock'] == 0){ echo "Out of Stock"; } else if($pvalue['var_stock'] < 5) { echo $pvalue['var_stock']." Items left";}
@@ -200,7 +216,7 @@
 																(<?php echo $pvalue['var_quantity']; ?>) </p>
 				                        	</div>
 			                        	</div>
-			                        </div>
+			                        </div>-->
 				                </div>
 			                </div>
 			            
@@ -217,10 +233,10 @@
 
 			<!-- Request Quote ******************************* -->
 			<section class="why_choose_us">
-				<div class="theme_title" style="background-image: url(<?php echo base_url(); ?>public/front_assets/images/background/Why choose us.JPG);">
-					<div class=" center">
+				<div class="theme_title_bg" style="background-image: url(<?php echo base_url(); ?>public/front_assets/images/background/Why choose us.JPG);">
+					<div class="theme_title center">
 						<div class="container">
-							<h2>Why Us</h2><br>
+							<h2>Why Us</h2>
 							<!-- <p style="color:#000;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered <br>alteration in some form, by injected humour.</p> -->
 							
 						</div>
@@ -262,7 +278,7 @@
 							<div class="choose_us_item tran3s">
 								<div class="icon p_color_bg border_round float_left"><span class="ficon icon-food-2"></span></div> <!-- End of .icon -->
 								<div class="text float_left">
-									<h3 class="tran3s">Healthy Ingredients</h3>
+									<h3 class="tran3s">No Additives</h3>
 									<!-- <p class="tran3s">Duis aute irure dolor in reprehenderit voluptate velit esse seds cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p> -->
 								</div> <!-- End of .text -->
 								<div class="clear_fix"></div>
@@ -274,7 +290,7 @@
 							<div class="choose_us_item tran3s">
 								<div class="icon p_color_bg border_round float_left"><span class="ficon icon-fruit"></span></div> <!-- End of .icon -->
 								<div class="text float_left">
-									<h3 class="tran3s">90% Nutrient Retention</h3>
+									<h3 class="tran3s">Maximum Retention of Nutrients</h3>
 									<!-- <p class="tran3s">Duis aute irure dolor in reprehenderit voluptate velit esse seds cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p> -->
 								</div> <!-- End of .text -->
 								<div class="clear_fix"></div>
@@ -339,33 +355,26 @@
 			<section class="news">
 				<div class="container">
 					<div class="theme_title center">
-		                <h3>More from Burlyfield</h3>
+		                <h3>our latest news</h3>
 		            </div>
 					<div class="row">
 					    <?php foreach($blog as $blg) { ?>
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="blogList_single_post clear_fix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-	        					<!--<div class="img_holder">  Vaishali Magar 02-03-2021 commited -->
-									<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive" style="padding:20px; height: 225px;">
-									
-								
+									<img src="<?php echo base_url().'uploads/blog/'.$blg['var_image'] ?>" alt="News" class="img-responsive">	
 								<div class="post">
 									<ul>
-										<center>
+										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-tag" aria-hidden="true"></i> Healthy</a></li>
 										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $blg['var_author']; ?></a></li>
 										<li><a href="<?php echo base_url(); ?>blog" class="tran3s"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php   $date=date_create($blg['dt_createddate']);
 													echo date_format($date,"d|m|Y");
-											 ?></a></li></center>
+											 ?></a></li>
 									</ul>
 									<div class="text">
 										<h4><a href="<?php echo base_url(); ?>blog"><?php echo $blg['var_name']; ?></a></h4>
-										<!--<p><?php echo $blg['txt_description']; ?></p>
-										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>-->
-										<!--<p><?php echo $blg['txt_description']; ?></p>-->
-										<span  class="wrap" data-toggle="tooltip" data-placement="top" title="<?php echo $blg['short_desc'];?>">
-										<p><?php echo $blg['short_desc']; ?></p>
-										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div></span>
-										<!--<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>-->
+										<p><?php echo $blg['short_description']; ?></p>
+										<div class="link"><a href="<?php echo base_url().'pages/blog_details/'.base64_encode($blg['int_glcode']);?>" class="tran3s">READ MORE<span class="fa fa-sort-desc"></span></a></div>
+										
 									</div>
 									
 								</div> <!-- End of .post -->
@@ -386,13 +395,13 @@
 		    <section class="testimonials-section">
 		        <div class="container">
 		            <div class="theme_title">
-						<h2>Our Happy Customers</h2>
+						<h2>testimonials</h2>
 					</div>
 		            <div class="testimonials-carousel">
 		                <?php foreach($testimonial as $test) { ?>
 		            	<!--Slide Item-->
 		                <div class="slide-item">
-		                	<div class="inner-box">  
+		                	<div class="inner-box">
 		                        <div class="content">
 		                        	<div class="text-bg">
 			                            <div class="quote-icon"><span class="fa fa-quote-left"></span></div>
@@ -402,17 +411,16 @@
 		                            	<div class="author-thumb"><img src="<?php echo base_url().'uploads/testimonial/'.$test['var_image'] ?>" alt=""></div>
 		                                <div class="author"><?php echo $test['var_name']; ?></div>
 		                                <div class="author-title"><?php echo $test['var_position']; ?></div>
-										<div class="author-city"><?php echo $test['var_city']; ?></div>
 		                            </div>
 		                        </div>
-		                    </div> 
+		                    </div>
 		                </div>
 		                <?php } ?>
-	
+		                
+		            	
 		            </div>
 		        </div>
 		    </section>
-			
 
 			<!-- Partner Logo********************** -->
 
@@ -562,36 +570,13 @@
            }
 
        });
+	   
+	  //Alert for ADD TO CART
+	 $(document).ready ( function () 
+	{
+		$(document).on('click', "#AddToCart", function () 
+		{
+			alert("Product added to your cart");
+		});
+	});
    </script>
-   <script>
-var charLimit = 20;
-
-function truncate(el) {
- var clone = el.children().first(),
-     originalContent = el.html(),
-     text = clone.text();
- el.attr("data-originalContent", originalContent);
- clone.text(text.substring(0, charLimit) + "...")
- el.empty().append(clone);
-}
-
-function reveal(el) {
- el.html(el.attr("data-originalContent"));
-}
-
-$("#description").on("click", function (e) {
- e.preventDefault();
- var truncateElement = $(this).parent().prev().find(".truncate");
- if ($(this).text() === "Read More") {
- } else {
-     $(this).text("Read More");
-     truncate(truncateElement);
- }
-});
-
-$(".truncate").each(function () {
-   truncate($(this));
-});
- 
-
-</script>

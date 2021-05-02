@@ -75,8 +75,10 @@
                             <?php } ?>
                         </select>
                     </th>
-                    <th></th>
+                    <th colspan="4"></th>
+					
                     <th colspan="2">
+					
                       <input type="search" name="search" id="search" class="form-control" placeholder="Search">
                   </th></tr>                
                   <tr style="background-color: rgba(0, 0, 3, 0.1);">
@@ -147,13 +149,13 @@
                             <a class="example-image-link" href="<?php echo $Image; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image; ?>" id="cate_ig" alt="<?php echo $Image; ?>" /></a>
                         </td>
 						<td>
-                            <a class="example-image-link" href="<?php echo $Image1; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image1; ?>" id="cate_ig1" alt="<?php echo $Image1; ?>" /></a>
+                            <a class="example-image-link" href="<?php echo $Image1; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image1; ?>" id="cate_ig" alt="<?php echo $Image1; ?>" /></a>
                         </td>
 						<td>
-                            <a class="example-image-link" href="<?php echo $Image2; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image2; ?>" id="cate_ig1" alt="<?php echo $Image2; ?>" /></a>
+                            <a class="example-image-link" href="<?php echo $Image2; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image2; ?>" id="cate_ig" alt="<?php echo $Image2; ?>" /></a>
                         </td>
 						<td>
-                            <a class="example-image-link" href="<?php echo $Image3; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image3; ?>" id="cate_ig1" alt="<?php echo $Image3; ?>" /></a>
+                            <a class="example-image-link" href="<?php echo $Image3; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image3; ?>" id="cate_ig" alt="<?php echo $Image3; ?>" /></a>
                         </td>
                             <td>
                                 <?php echo $row['price_details']; ?>
@@ -166,7 +168,7 @@
                         </tr>
                             <?php } 
                         } else { ?>
-                            <tr><th colspan="8">No data are available.</th></tr>
+                            <tr><th colspan="10">No data are available.</th></tr>
                         <?php } ?>
                     </tbody>
                 </table>

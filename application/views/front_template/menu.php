@@ -1,7 +1,6 @@
 
-
   			<!-- Menu ******************************* -->
-			<div class="theme_menu color1_bg">
+			<div class="theme_menu color1_bg" style="position:fixed;width: 100%;top:0;">
 				<div class="container">
 					<nav class="menuzord pull-left" id="main_menu">
 					   <ul class="menuzord-menu" id="nav">
@@ -17,11 +16,9 @@
 								 <li><a href="<?php echo base_url(); ?>testimonial">Testimonials</a></li>
 					            <li><a href="<?php echo base_url(); ?>stores">Find Us</a></li>
 					         </ul>
-					      </li>
-					      
+					      </li>  
 					   </ul> <!-- End of .menuzord-menu -->
 				   </nav> <!-- End of #main_menu --->
-
 
 				   <!-- ******* Cart And Search Option ******** -->
 				   <div class="nav_side_content pull-right">

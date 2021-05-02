@@ -23,12 +23,13 @@
 												<!-- <li><a href="blog-details.html" class="tran3s"><i class="fa fa-comments" aria-hidden="true"></i> 26</a></li>
 												<li><a href="blog-details.html" class="tran3s"><i class="fa fa-heart" aria-hidden="true"></i> 26</a></li> -->
 											</ul>
+											<p><?php echo $blg['short_desc']; ?></p>
 											<p><?php echo $blg['txt_description']; ?></p>
 											
 										</div>
 										
-									</div> <!-- End of .post -->
 		        				</div>
+									</div> <!-- End of .post -->
 								<?php } ?>
 							</div>
 						</div>

@@ -25,7 +25,6 @@ class Stors_model extends CI_Model {
             $this->db->group_end();
 
         }
-
         $this->db->where('chr_delete','N');        
 
         $result = $this->db->get();

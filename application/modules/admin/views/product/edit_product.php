@@ -89,10 +89,10 @@
                             }
                             ?>
                             <div class="col-sm-7">
-                                <input type="file" class="form-control" id="var_cimg" name="var_cimg">
+                                <input type="file" class="form-control" id="var_cimg" name="var_cimg" >
                             </div>
                             <a class="example-image-link" href="<?php echo $Image; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image; ?>" id="cate_ig" alt="<?php echo $Image; ?>" /></a>
-                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image']; ?>">
+                            <input type="text" name="hidvar_image" value="<?php echo $data['var_image']; ?>">
                         </div>
 						<div class="form-group row">
                             <label for="var_image1" class="col-sm-3 text-right control-label col-form-label">Cover Image 2</label>
@@ -107,7 +107,7 @@
                                 <input type="file" class="form-control" id="var_img" name="var_img">
                             </div>
                             <a class="example-image-link" href="<?php echo $Image1; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image1; ?>" id="cate_ig" alt="<?php echo $Image1; ?>" /></a>
-                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image1']; ?>">
+                            <input type="text" name="hidvar_image1" value="<?php echo $data['var_image1']; ?>">
                         </div>
 						<div class="form-group row">
                             <label for="var_image2" class="col-sm-3 text-right control-label col-form-label">Cover Image 3</label>
@@ -122,7 +122,7 @@
                                 <input type="file" class="form-control" id="var_img2" name="var_img2">
                             </div>
                             <a class="example-image-link" href="<?php echo $Image2; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image2; ?>" id="cate_ig" alt="<?php echo $Image2; ?>" /></a>
-                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image2']; ?>">
+                            <input type="text" name="hidvar_image2" value="<?php echo $data['var_image2']; ?>">
                         </div>
 						<div class="form-group row">
                             <label for="var_image3" class="col-sm-3 text-right control-label col-form-label">Cover Image 4</label>
@@ -137,7 +137,7 @@
                                 <input type="file" class="form-control" id="var_img3" name="var_img3">
                             </div>
                             <a class="example-image-link" href="<?php echo $Image3; ?>" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="<?php echo $Image3; ?>" id="cate_ig" alt="<?php echo $Image3; ?>" /></a>
-                            <input type="hidden" name="hidvar_image" value="<?php echo $data['var_image3']; ?>">
+                            <input type="text" name="hidvar_image3" value="<?php echo $data['var_image3']; ?>">
                         </div>
                         <div class="form-group row">
                             <label for="var_quantity" class="col-sm-3 text-right control-label col-form-label">Short Description</label>

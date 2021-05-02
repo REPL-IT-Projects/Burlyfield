@@ -34,6 +34,8 @@
 	        <div class="shop_single_page">
 	        	<div class="container">
 	        		<div class="row">
+
+
 						<!-- _______________________ SIDEBAR ____________________ -->
 	        			<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 sidebar_styleTwo">
 	        				<div class="wrapper">
@@ -48,9 +50,11 @@
 										<?php foreach($category as $row4){ ?> 
 										<li><a href="<?php echo base_url().'product/category/'.base64_encode($row4['int_glcode']);?>" class="tran3s" rel="nofollow"><?php echo $row4['var_title'];?></a></li>
 									<?php } ?>
-										
+										<li><a href="<?php echo base_url().'product';?>" class="tran3s">Others</a></li>
 									</ul>
 	        					</div> <!-- End of .sidebar_categories -->
+
+	        					
 
 								<div class="best_sellers clear_fix wow fadeInUp">
 									<div class="theme_inner_title">
@@ -61,9 +65,6 @@
 										<div class="img_holder float_left">
 											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image'];?>" style="height: 70px; width: 70px;" alt="image">
 										</div> <!-- End of .img_holder -->
-										<!--<div class="img_holder float_left">
-											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image1'];?>" style="height: 70px; width: 70px;" alt="image">
-										</div>-->
 
 										<div class="text float_left display-inline ">
 											<a href="<?php echo base_url().'product/detail/'.base64_encode($row11['int_glcode']);?>"><h6><?php echo $row11['var_title'];?></h6></a>
@@ -83,15 +84,6 @@
 										<div class="img_holder float_left">
 											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image'];?>" style="height: 70px; width: 70px;" alt="image">
 										</div> <!-- End of .img_holder -->
-										<!--<div class="img_holder float_left">
-											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image1'];?>" style="height: 70px; width: 70px;" alt="image">
-										</div>
-										<div class="img_holder float_left">
-											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image2'];?>" style="height: 70px; width: 70px;" alt="image">
-										</div>
-											<div class="img_holder float_left">
-											<img src="<?php echo base_url().'uploads/products/'.$row11['var_image3'];?>" style="height: 70px; width: 70px;" alt="image">
-										</div>-->
 
 										<div class="text float_left display-inline ">
 											<a href="<?php echo base_url().'product/detail/'.base64_encode($row11['int_glcode']);?>"><h6><?php echo $row11['var_title'];?></h6></a>
@@ -115,89 +107,12 @@
 	        			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 product_details">
 	        				<div class="wrapper">
 	        					<?php foreach ($product as $pvalue) { ?>
-	        						<!--<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Next</span> -->
-	
-			<div class="row">
-				<div class="col-sm-6">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="row">
-									<div class="product_top_section clear_fix">
-										<div class="img_holder float_left">
-											 <?php
-                            if ($pvalue['var_image'] != '') {?>
-                              <img src="<?php echo base_url().'uploads/products/'.$pvalue['var_image'];?>" alt="img" class="img-responsive" >
-                           <?php } else{ ?>
-                                <img src="<?php echo base_url().'public/assets/images/site_imges/noimage.jpg' ?> ">;
-                           <?php } ?>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-							   <div class="row">
-									<div class="product_top_section clear_fix">
-										<div class="img_holder float_left">
-											 <?php
-                            if ($pvalue['var_image1'] != '') {?>
-                              <img src="<?php echo base_url().'uploads/products/'.$pvalue['var_image1'];?>" alt="img" class="img-responsive" >
-                           <?php } else{ ?>
-                                <img src="<?php echo base_url().'public/assets/images/site_imges/noimage.jpg' ?> ">;
-                           <?php } ?>
-										</div> <!-- End of .img_holder -->
-									</div>
-								</div>
-							</div>
-							<div class="item">
-							   <div class="row">
-									<div class="product_top_section clear_fix">
-										<div class="img_holder float_left">
-							<?php   if ($pvalue['var_image2'] != '') {?>
-                              <img src="<?php echo base_url().'uploads/products/'.$pvalue['var_image2'];?>" alt="img" class="img-responsive" >
-                           <?php } else{ ?>
-                                <img src="<?php echo base_url().'public/assets/images/site_imges/noimage.jpg' ?> ">;
-                           <?php } ?>
-										</div> <!-- End of .img_holder -->
-									</div>
-								</div>
-							</div>
-							<div class="item">
-							   <div class="row">
-									<div class="product_top_section clear_fix">
-										<div class="img_holder float_left">
-											 <?php
-                            if ($pvalue['var_image3'] != '') {?>
-                              <img src="<?php echo base_url().'uploads/products/'.$pvalue['var_image3'];?>" alt="img" class="img-responsive" >
-                           <?php } else{ ?>
-                                <img src="<?php echo base_url().'public/assets/images/site_imges/noimage.jpg' ?> ">;
-                           <?php } ?>
-										</div> <!-- End of .img_holder -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="controls testimonial_control pull-right">
-							<a class="left fa fa-chevron-left btn btn-default testimonial_btn" style="background-color: #373d4b !important;
-									color: #fff !important;" href="#carousel-example-generic" data-slide="prev"></a>
-
-							<a class="right fa fa-chevron-right btn btn-default testimonial_btn" style="background-color: #373d4b !important;
-									color: #fff !important;" href="#carousel-example-generic" data-slide="next"></a>
-					</div>
-				</div>
-					<div class="col-sm-6">
-						<div class="product_top_section clear_fix">
-							<div class="item_description float_left">
+	        						
+	        					<div class="product_top_section clear_fix">
+	        						<div class="img_holder float_left">
+	        							<img src="<?php echo base_url().'uploads/products/'.$pvalue['var_image'];?>" alt="img" class="img-responsive" >
+	        						</div> <!-- End of .img_holder -->
+	        						<div class="item_description float_left">
 	        							<h4><?php echo $pvalue['var_title'];?></h4>
 	        							<ul>
 											<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -228,8 +143,6 @@
 										<?php // } ?>
 	        						</div> <!-- End of item_description -->
 	        					</div> <!-- End of .product_top_section -->
-			</div></div>
-	
 
 	        					<!-- __________________ Product review ___________________ -->
 	        					<div class="product-review-tab">

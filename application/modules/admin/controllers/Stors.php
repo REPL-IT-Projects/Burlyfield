@@ -17,7 +17,8 @@ class Stors extends Admin_Controller {
 		$allcount = $this->model->records_count();
 		$data['total_rows'] = $allcount;
 
-		$query = $this->db->where('chr_delete', 'N')->get('mst_stors');
+		//$query = $this->db->where('chr_delete', 'N')->get('mst_stors');
+		$query = $this->db->get('mst_stors');
 		$data['total_data'] = $query->num_rows();
 
 		$data['data'] = $this->model->getData(0,10);
@@ -57,8 +58,9 @@ class Stors extends Admin_Controller {
 		$allcount = $this->model->records_count($search);
 
 		$data['total_rows'] = $allcount;
-
-		$query = $this->db->where('chr_delete', 'N')->get('mst_stors');
+		
+		$query = $this->db->get('mst_stors');
+		//$query = $this->db->where('chr_delete', 'N')->get('mst_stors');
 		$data['total_data'] = $query->num_rows();
         // Get records
 		$users_record = $this->model->getData($rowno,$rowperpage,$search,$_field,$_sort);

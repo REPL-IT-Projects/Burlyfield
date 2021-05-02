@@ -1,9 +1,6 @@
 <section class="breadcrumb-area" style="background-image:url(<?php echo base_url(); ?>public/front_assets/images/background/OurProducts.jpg);">
-			    
-			    
+
 			</section>
-
-
 			<!-- Shop Page Content************************ -->
 	        <div class="shop_page featured-product">
 	        	<div class="container">
@@ -92,12 +89,23 @@
 					                        	<h3><a href="<?php echo base_url().'product/detail/'.base64_encode($row1['int_glcode']);?>"><?php echo $row1['var_title'];?></a></h3>
 					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
 					                            <div class="price">&#x20b9;<?php echo $row1['var_price'];?>&nbsp;(<?php echo $row1['var_quantity'];?>)</div>
-					                        </div>
-					                        <div class="overlay-box">
+												<?php if($pvalue['var_stock'] == 0)
+												{ ?> 
+												<a href="javascript:;"><span class="btn btn-danger" id="OutOffStock">Out Off Stock</span></a>		
+												<?php }
+												
+												else{ 
+													 if($pvalue['var_stock'] < 5) 
+													{ ?><span><?php echo $pvalue['var_stock']." Items left";?></span>
+													<?php }?>
+													<br><a href="javascript:;" onclick="add_to_cart('<?php echo $pvalue['q_id'];?>','1','<?php echo $pvalue['int_glcode'];?>','<?php echo $pvalue['var_offer'];?>')"><span class="btn btn-primary"  id="AddToCart">ADD TO CART</span></a>	
+													<?php  } ?>
+											</div>
+					                 <!--   <div class="overlay-box">
 					                        	<div class="inner">
 						                        	<div class="top-content">
 						                        		<ul>
-						                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> -->
+						                        			<!-- <li><a href="#"><span class="fa fa-eye"></span></a></li> 
 						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span>
 						                        			<?php // if(isset($_SESSION['fk_user'])){ ?>
         				                        			<a href="javascript:;" onclick="add_to_cart('<?php echo $row1['q_id'];?>','1','<?php echo $row1['int_glcode'];?>','<?php echo $row1['var_offer'];?>')"><span class="icon-icon-32846"></span></a>
@@ -106,17 +114,17 @@
         													<?php // } ?>
 																
 															</li>
-						                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> -->
+						                        			<!-- <li><a href="#"><span class="fa fa-heart-o"></span></a></li> 
 						                        		</ul>
 						                        	</div>
 						                        	<div class="bottom-content">
 						                        		<h4><a href="<?php echo base_url().'product/detail/'.base64_encode($row1['int_glcode']);?>"><?php echo $row1['var_title'];?></a></h4>
-                                        <p><?php if($pvalue['var_stock'] == 0){ echo "Out of Stock"; } else if($pvalue['var_stock'] < 5) { echo $pvalue['var_stock']." Items left";}
-                                        ?></p>
+													<p><?php if($pvalue['var_stock'] == 0){ echo "Out of Stock"; } else if($pvalue['var_stock'] < 5) { echo $pvalue['var_stock']." Items left";}
+													?></p>
 						                        		<p>&#x20b9;<?php echo $row1['var_price'];?>&nbsp;(<?php echo $row1['var_quantity'];?>)</p>
 						                        	</div>
 					                        	</div>
-					                        </div>
+					                        </div>-->
 						                </div>
 					                </div>
 					            </div>
@@ -461,5 +469,13 @@ function createTable(result,sno,total_rows,total_users){
     }
     
   }
+   //Alert for ADD TO CART
+	 $(document).ready ( function () 
+	{
+		$(document).on('click', "#AddToCart", function () 
+		{
+			alert("Product added to your cart");
+		});
+	});
 
 </script>

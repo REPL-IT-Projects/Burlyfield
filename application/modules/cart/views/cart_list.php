@@ -41,7 +41,7 @@
 										<td style="line-height: 125px"><span class="value">&#x20b9; <?php echo $row['price'];?></span></td>										
 										<?php $total = $row['price'] * $row['quantity'];
 												// $g = $row['gst'] + 100;
-								    //             $total = ($tl*100)/$g;
+								    // $total = ($tl*100)/$g;
 								                
 								                // $GST = ($tl*$row['gst'])/100;
 								                // $total = $tl + $GST;
@@ -139,6 +139,7 @@
 						<a href="javascript:;" data-toggle="modal" data-target="#wantDonate" class="btn btn-primary margin-bottom-30">Proceed to Checkout</a>
 						
 					<?php } ?>
+					&nbsp;<a href="<?php echo base_url();?>product" class="btn btn-primary margin-bottom-30">Continue shopping</a>
 					</div>
 				</div>
 			</div> <!-- /cart_table -->

@@ -187,7 +187,7 @@
 
               <div class="vc_divider" style="height:30px"></div>
 
-              <center><h3><span>You can add product to your cart,</br> after login here..</span></h3></center>
+              <center><h3><span>Please login before proceeding to checkout</span></h3></center>
 
               <div class="vc_divider" style="height:30px"></div>
 

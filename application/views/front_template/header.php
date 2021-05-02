@@ -264,7 +264,7 @@ src="https://www.facebook.com/tr?id=291436904709817&ev=PageView
                                               foreach($_SESSION["cart_item"] as $row){
                                               	$total = $row['price'] * $row['quantity'];
                                                 $grand_total = $total + $grand_total;
-                                              }
+                                            }
                                             ?>
 							   		<div class="cart-info">
 							   			<div>My Cart</div>
@@ -276,8 +276,9 @@ src="https://www.facebook.com/tr?id=291436904709817&ev=PageView
                                          
                                     <?php //} ?>
 
-								   		
-							   		<div class="cart_list color2_bg" aria-labelledby="cartDropdown">
+								   	
+									<div class="cart_list color2_bg" aria-labelledby="cartDropdown">
+
 							   		    <?php if(isset($_SESSION["cart_item"])){ ?>
 							   			<ul>
 							   				<?php 
@@ -319,9 +320,7 @@ src="https://www.facebook.com/tr?id=291436904709817&ev=PageView
 							   			<?php } ?>
 							   			</div>
 							   		</div> <!-- End of .cart_list -->
-							   		
 							    </div>
-
 							</div>
 
 						</div>
@@ -329,3 +328,11 @@ src="https://www.facebook.com/tr?id=291436904709817&ev=PageView
 					</div>
 				</div> <!-- End of .bottom_header -->
 			</header>
+<script>
+$(document).click(function() {
+    var container = $("#cart_body");
+    if (!container.is(event.target) && !container.has(event.target).length) {
+        container.hide();
+    }
+});
+</script>

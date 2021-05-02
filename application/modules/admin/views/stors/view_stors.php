@@ -50,8 +50,7 @@
                     <th><a href="javascript:void(0);" field="var_name" class="_sort">Name</a></th>
                     <th><a href="javascript:void(0);" field="var_position" class="_sort">Address</a></th>
 					<th>City</th>
-                    <th>Latitude</th>
-                    <th>Longitude</th>
+                    
                     <th>Publish</th>
                 </tr>
                 </thead>
@@ -78,8 +77,7 @@
                         </td>
                         <td><?php echo $row['var_address']; ?></td> 
 						<td><?php echo $row['var_state']; ?></td>  						
-                        <td><?php echo $row['var_lat']; ?></td>
-                        <td><?php echo $row['var_long']; ?></td>
+                        
                         
                             <td class="center">
                                 <a href="javascript:void(0);">
